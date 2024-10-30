@@ -25,17 +25,22 @@ public class ActorController : MonoBehaviour
 
     void Awake()
     {
+        //We do this because you can't make Awake virtual
         OnAwake();
     }
 
     void Start()
     {
+        //We do this because you can't make Start virtual
         OnStart();
+        //The GameManager tracks all the actors that exist in the game
+        //Add us to it when the scene begins
         GameManager.Singleton.AddActor(this);
     }
 
     public virtual void OnAwake()
     {
+        //MaxHealth imprints from Health at game's start
         MaxHealth = Health;
     }
     
@@ -77,10 +82,14 @@ public class ActorController : MonoBehaviour
     }
     public void Shoot(ProjectileController prefab,Vector3 pos, Vector3 rot)
     {
+        //If I don't list a prefab, use my default projectile
         if (prefab == null) prefab = DefaultProjectile;
         if (prefab == null) return;
+        //Spawn a bullet
         ProjectileController p = Instantiate(prefab, pos, Quaternion.Euler(rot));
+        //Then call setup on it
         p.Setup(this);
+        //If I have a shoot gnome set up, spawn it
         if(ShootGnome != null)
             Instantiate(ShootGnome, pos, Quaternion.Euler(rot));
             
@@ -88,39 +97,44 @@ public class ActorController : MonoBehaviour
 
     private void OnDestroy()
     {
-        
+        //The GameManager tracks all the actors that exist in the game
+        //Remove us from it when we leave the scene
         GameManager.Singleton.RemoveActor(this);
     }
 
+    //This gets called by JSON
     public void TakeEvent(EventJSON e)
     {
+        //If it calls for an animation, call it!
         if (Anim != null && !string.IsNullOrEmpty(e.Anim))
         {
             Anim.Play(e.Anim);
         }
+        //If it calls for an action, run it!
         if (!string.IsNullOrEmpty(e.Action))
         {
             DoAction(e.Action,e.Amt);
         }
     }
     
+    //A virtual function meant to be overridden. Gets called whenever you have an event
+    //act is equal to the event's "Action" json value
+    //Each script you make should have its own override of this
     public virtual void DoAction(string act, float amt = 0)
     {
-        switch (act)
+        //Reads the 'act' that's provided and runs different code depending on the message
+        //This is usually a coroutine
+        if (act == "Flash")
         {
-            case "Flash":
-            {
-                StartCoroutine(Flash(amt));
-                break;
-            }
-            case "Shake":
-            {
-                StartCoroutine(Shake(amt));
-                break;
-            }
+            StartCoroutine(Flash(amt));
+        }
+        else if (act == "Shake")
+        {
+            StartCoroutine(Shake(amt));
         }
     }
 
+    //Makes the actor flash red
     public IEnumerator Flash(float amt)
     {
         if (amt <= 0) amt = 0.5f;
@@ -141,11 +155,11 @@ public class ActorController : MonoBehaviour
         Body.color = c;
     }
     
+    //Makes the actor screenshake
     public IEnumerator Shake(float amt)
     {
         float time = amt > 0 ? amt : 0.5f;
         Vector3 startPos = Body.transform.localPosition;
-        Debug.Log("SHAKE: " + amt + " / " + time);
         while (time > 0)
         {
             time -= Time.deltaTime;
@@ -153,7 +167,6 @@ public class ActorController : MonoBehaviour
                 new Vector3(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f));
             yield return null;
         }
-        Debug.Log("SHAKE END: " + amt);
         Body.transform.localPosition = startPos;
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Static class that has the JSON manager code on it
 public static class JSONReader
 {
     public static LevelJSON ParseJSON(string txt)
@@ -10,6 +11,7 @@ public static class JSONReader
     }
 }
 
+//Your JSON files should only have these variables in them
 [System.Serializable]
 public class LevelJSON
 {
@@ -18,6 +20,7 @@ public class LevelJSON
     public List<EventJSON> Events;
 }
 
+//These are the only valid variables for your Event objects
 [System.Serializable]
 public class EventJSON
 {

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//This is a type of Actor that hurts what it hits
+//Useful for enemies, hazards, and projectiles
 public class HazardController : ActorController
 {
     //How much damage I deal on collision
@@ -18,7 +20,7 @@ public class HazardController : ActorController
             OnHit(act);
         }
         if(other.gameObject.CompareTag("Wall"))
-            HitWall();
+            HitWall(other.gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -32,17 +34,18 @@ public class HazardController : ActorController
             OnHit(act);
         }
         if(other.gameObject.CompareTag("Wall"))
-            HitWall();
+            HitWall(other.gameObject);
     }
 
-    public virtual void HitWall()
+    //Gets called when it hits an outer wall
+    public virtual void HitWall(GameObject obj)
     {
         //Most things don't care
     }
 
+    //Gets called when it hits another actor
     public virtual void OnHit(ActorController act)
     {
-        Debug.Log("HIT " + act + " / " + Damage);
         //If you do damage, do damage!
         if (Damage > 0)
         {
