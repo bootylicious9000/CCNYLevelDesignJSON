@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//This class has some useful random little functions
+//You can ignore it, but maybe something within it will be useful to you
 public static class GameMaster
 {
     /// Loads the next scene in the Build Settings queue.

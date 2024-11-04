@@ -13,9 +13,6 @@ public class PlayerController : ActorController
     
     //Move speed
     public float Speed = 5;
-    
-    //The projectile I spawn when I shoot (if any)
-    public ProjectileController BulletPrefab;
 
 
     public override void OnAwake()

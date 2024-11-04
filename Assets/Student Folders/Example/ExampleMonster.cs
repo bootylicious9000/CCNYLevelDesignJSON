@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,19 +8,13 @@ public class ExampleMonster : HazardController
     public override void DoAction(string act, float amt = 0)
     {
         base.DoAction(act, amt);
-        switch (act)
+        if (act == "FourSquare")
         {
-            case "FourSquare":
-            {
-                StartCoroutine(FourSquare());
-                break;
-            }
-            
-            case "RandomWalk":
-            {
-                StartCoroutine(RandomWalk());
-                break;
-            }
+            StartCoroutine(FourSquare());
+        }
+        if (act == "RandomWalk")
+        {
+            StartCoroutine(RandomWalk());
         }
     }
 
@@ -127,7 +120,6 @@ public class ExampleMonster : HazardController
     //Notice how the action after this one plays out different than normal
     public IEnumerator RandomWalk()
     {
-        Debug.Log("WALK");
         //I use this to track movement speed
         float moveSpeed = 5;
         //This works a lot like the FourSquare movement blocks, but it's just one

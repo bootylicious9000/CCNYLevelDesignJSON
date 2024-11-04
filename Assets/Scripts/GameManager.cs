@@ -3,23 +3,27 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
+//This script handles the game's backend
+//You really shouldn't mess with it
+//Just make sure to set MainNPC and JSON in the editor
 public class GameManager : MonoBehaviour
 {
+    [Header("Set To Your Main NPC")]
     public ActorController MainNPC;
+    [Header("Drag Your JSON File Here")]
+    public TextAsset JSON;
     public static GameManager Singleton;
+    [Header("Ignore These")]
     public TextMeshPro HealthDisplay;
     public TextMeshPro DialogueDisplay;
     public SpriteRenderer Fader;
-    public TextAsset JSON;
     public AudioSource AS;
     public LevelJSON Script;
     public List<ActorController> Actors;
     public Dictionary<string, List<ActorController>> ActorDict = new Dictionary<string, List<ActorController>>();
     public float Clock;
     public List<EventJSON> Queue = new List<EventJSON>();
-    // private float DialogueCountdown = 0;
     private bool RoundBegun = false;
 
     private void Awake()
@@ -50,12 +54,6 @@ public class GameManager : MonoBehaviour
             }
             return;
         }
-        // if (DialogueCountdown > 0)
-        // {
-        //     DialogueCountdown -= Time.deltaTime;
-        //     if (DialogueCountdown <= 0)
-        //         DialogueDisplay.text = "";
-        // }
         Clock += Time.deltaTime;
         while (Queue.Count > 0 && Queue[0].Time <= Clock)
         {
@@ -110,7 +108,6 @@ public class GameManager : MonoBehaviour
     public void HandleDialogue(string d, float duration=0)
     {
         DialogueDisplay.text = d;
-        // DialogueCountdown = duration > 0 ? duration : 999;
     }
 
     public IEnumerator LevelComplete()
