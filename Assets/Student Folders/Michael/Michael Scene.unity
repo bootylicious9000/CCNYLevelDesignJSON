@@ -337,11 +337,11 @@ PrefabInstance:
     - target: {fileID: 4446073184540434527, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: DeathGnome
       value: 
-      objectReference: {fileID: 6561757389258751516, guid: dd3cf64b4a2483b4e9ad819c4eadd22f, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4446073184540434527, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: ShootGnome
       value: 
-      objectReference: {fileID: 4943575786287307083, guid: 2765f1435288b8d4291ebafd9c38f8c0, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8185909400982546795, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
