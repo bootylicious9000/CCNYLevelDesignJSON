@@ -1,0 +1,20 @@
+{
+  "Title": "HabinScene1",
+  "Author": "Habin Park",
+  "Events": [
+    {"Time": 0,"Anim": "HabinSpinShoot","Action": "RandomWalk"},
+    {"Time": 2,"Action": "RandomWalk"},
+    {"Time": 2.1,"Action": "SingleShot"},
+
+    {"Time": 4,"Action": "SingleShot"},
+    {"Time": 4.2,"Action": "SingleShot"},
+
+    {"Time": 5.5,"Action": "Shake", "Amt": 3},
+    {"Time": 8,"Dialogue": "its over"},
+    {"Time": 8,"Who":"Player","Action": "Flash"},
+    {"Time": 10,"Dialogue": "the end"},
+
+
+    {"Time": 400}
+  ]
+}
