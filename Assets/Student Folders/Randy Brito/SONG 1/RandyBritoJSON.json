@@ -1,6 +1,6 @@
 {
-  "Title": "Example Level",
-  "Author": "Example Student",
+  "Title": "Smino - No L's",
+  "Author": "Randy Brito",
   "Events": [
     {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
     {"Time": 2,"Action": "RandomWalk"},
