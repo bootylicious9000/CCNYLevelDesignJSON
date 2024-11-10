@@ -1,14 +1,26 @@
 {
+  "Runtime": "169",
   "Title": "Smino - No L's",
   "Author": "Randy Brito",
   "Events": [
-    {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 0,"Action": "RandomWalk"},
     {"Time": 2,"Action": "RandomWalk"},
     {"Time": 4,"Action": "RandomWalk"},
-    {"Time": 5.5,"Action": "Shake", "Amt": 3},
-    {"Time": 8,"Dialogue": "Hello"},
+    {"Time": 5,"Who":"Player","Action": "Flash"},
+    {"Time": 6.8,"Action": "Shake", "Amt": 3},
     {"Time": 8,"Who":"Player","Action": "Flash"},
-    {"Time": 10,"Dialogue": ""},
-    {"Time": 12}
+    {"Time": 10,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 12, "Action": "RandomWalk"},
+    {"Time": 20, "Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 24, "Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 29, "Anim": "SpinShoot"},
+    {"Time": 31,"Action": "RandomWalk"},
+    {"Time": 32, "Anim": "SpinShoot"},
+    {"Time": 34,"Action": "RandomWalk"},
+    {"Time": 36, "Anim": "SpinShoot"},
+    {"Time": 38,"Action": "RandomWalk"},
+    {"Time": 39,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 43,"Anim": "SpinShoot"}
+    
   ]
 }
