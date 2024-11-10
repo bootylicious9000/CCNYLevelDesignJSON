@@ -116,4 +116,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         GameMaster.NextStage();
     }
+
+    public static implicit operator GameManager(HabinGameManager v)
+    {
+        throw new NotImplementedException();
+    }
 }
