@@ -23,6 +23,9 @@ public class ActorController : MonoBehaviour
     //Spawns this gnome (particle and audio emitter) when you die
     public GnomeScript DeathGnome;
 
+    private bool HasIdle = false;
+    private string CurrentAnim = "";
+
     void Awake()
     {
         //We do this because you can't make Awake virtual
@@ -36,6 +39,15 @@ public class ActorController : MonoBehaviour
         //The GameManager tracks all the actors that exist in the game
         //Add us to it when the scene begins
         GameManager.Singleton.AddActor(this);
+
+        if (Anim != null)
+        {
+            foreach (AnimationClip c in Anim.runtimeAnimatorController.animationClips)
+            {
+                if (c.name == "Idle")
+                    HasIdle = true;
+            }
+        }
     }
 
     public virtual void OnAwake()
@@ -109,6 +121,7 @@ public class ActorController : MonoBehaviour
         if (Anim != null && !string.IsNullOrEmpty(e.Anim))
         {
             Anim.Play(e.Anim);
+            if(HasIdle) StartCoroutine(TrackAnim(e.Anim));
         }
         //If it calls for an action, run it!
         if (!string.IsNullOrEmpty(e.Action))
@@ -116,7 +129,32 @@ public class ActorController : MonoBehaviour
             DoAction(e.Action,e.Amt);
         }
     }
-    
+
+    public IEnumerator TrackAnim(string animName)
+    {
+        CurrentAnim = animName;
+        float timer = 0.1f;
+        yield return new WaitForSeconds(0.1f);
+        float Duration = 0;
+        foreach (AnimationClip c in Anim.runtimeAnimatorController.animationClips)
+        {
+            if (c.name == animName)
+                Duration = c.length * Anim.speed;
+        }
+            
+        if (Duration > 0)
+        {
+            yield return new WaitForSeconds(Duration-0.1f);
+            yield return null;
+            if (CurrentAnim == animName)
+            {
+                Anim.Play("Idle");
+                CurrentAnim = "";
+            }
+        }
+
+    }
+
     //A virtual function meant to be overridden. Gets called whenever you have an event
     //act is equal to the event's "Action" json value
     //Each script you make should have its own override of this
