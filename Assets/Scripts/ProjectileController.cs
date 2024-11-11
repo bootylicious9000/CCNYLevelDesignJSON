@@ -29,7 +29,9 @@ public class ProjectileController : HazardController
     {
         //If you hit the person who spawned you, don't hurt them
         if (act == Source) return;
-        
+        //if the tag is projectile then don't do anything
+        if (act.gameObject.CompareTag("Projectile")) return;
+
         //Do your normal payload delivery
         base.OnHit(act);
         
