@@ -1,6 +1,6 @@
 {
-  "Title": "Example Level",
-  "Author": "Example Student",
+  "Title": "LS Level 1",
+  "Author": "Leighton Snyder",
   "Events": [
     {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
     {"Time": 2,"Action": "RandomWalk"},
