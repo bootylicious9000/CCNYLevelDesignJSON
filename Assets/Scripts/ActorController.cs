@@ -81,7 +81,74 @@ public class ActorController : MonoBehaviour
             Instantiate(DeathGnome, transform.position, transform.rotation);
         Destroy(gameObject);
     }
+    
+    //Rotate to look at a target. If turnTime is over 0, it takes you turnTime to do a full turn around
+    public float LookAt(ActorController targ,float turnTime=0)
+    {
+        if (targ == null) return 0;
+        return LookAt(targ.transform.position,turnTime);
+    }
+    public float LookAt(GameObject targ,float turnTime=0)
+    {
+        if (targ == null) return 0;
+        return LookAt(targ.transform.position,turnTime);
+    }
+    public float LookAt(Vector3 targ,float turnTime=0)
+    {
+        //Calculate what z-rotation you'd need to face the target. This is just trig
+        Vector3 diff = targ - transform.position;
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        //If you turn slowly, only rotate part of the way there
+        float z = turnTime > 0 ? Mathf.MoveTowardsAngle(transform.rotation.eulerAngles.z, rot_z, (180/turnTime) * Time.deltaTime) : rot_z;
+        //Plug the rotation you calculated into your actual transform.rotation
+        transform.rotation = Quaternion.Euler(0,0,z);
+        //Returns how much rotation you still need to do to look at your target 
+        return Mathf.Abs(Mathf.DeltaAngle(z, rot_z));
+    }
 
+    public void ShootAtPlayer()
+    {
+        ShootAtPlayer(DefaultProjectile,transform.position);
+    }
+
+    public void ShootAtPlayer(ProjectileController prefab)
+    {
+        ShootAtPlayer(prefab,transform.position);
+    }
+
+    public void ShootAtPlayer(ProjectileController prefab, Vector3 pos)
+    {
+        ShootAt(PlayerController.Player.transform.position,prefab,pos);
+    }
+
+    //Shoot at a target
+    public void ShootAt(GameObject targ)
+    {
+        ShootAt(targ.transform.position,DefaultProjectile,transform.position);
+    }
+    public void ShootAt(GameObject targ, ProjectileController prefab)
+    {
+        ShootAt(targ.transform.position,prefab,transform.position);
+    }
+    public void ShootAt(GameObject targ, ProjectileController prefab, Vector3 pos)
+    {
+        ShootAt(targ.transform.position,prefab,pos);
+    }
+    public void ShootAt(Vector3 targ)
+    {
+        ShootAt(targ,DefaultProjectile,transform.position);
+    }
+    public void ShootAt(Vector3 targ, ProjectileController prefab)
+    {
+        ShootAt(targ,prefab,transform.position);
+    }
+    public void ShootAt(Vector3 targ, ProjectileController prefab, Vector3 pos)
+    {
+        Vector3 diff = targ - pos;
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        Shoot(prefab,pos,new Vector3(0,0,rot_z));
+    }
+    
     //Spawns a bullet and calls setup on it
     //Three versions, so you can decide if you want to provide all info or default on it
     public void Shoot(ProjectileController prefab=null)
@@ -104,7 +171,6 @@ public class ActorController : MonoBehaviour
         //If I have a shoot gnome set up, spawn it
         if(ShootGnome != null)
             Instantiate(ShootGnome, pos, Quaternion.Euler(rot));
-            
     }
 
     private void OnDestroy()
@@ -169,6 +235,26 @@ public class ActorController : MonoBehaviour
         else if (act == "Shake")
         {
             StartCoroutine(Shake(amt));
+        }
+        else if (act == "Shoot")
+        {
+            Shoot();
+        }
+        else if (act == "ShootAtPlayer")
+        {
+            ShootAtPlayer();
+        }
+        else if (act == "Rotate")
+        {
+            transform.rotation = Quaternion.Euler(0,0,amt);
+        }
+        else if (act == "MoveRight")
+        {
+            transform.position += new Vector3(amt,0,0);
+        }
+        else if (act == "MoveUp")
+        {
+            transform.position += new Vector3(0,amt,0);
         }
     }
 
