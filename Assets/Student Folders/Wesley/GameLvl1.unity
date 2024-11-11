@@ -281,15 +281,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1558863088311700548, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: m_Name
-      value: Example Monster
+      value: ' Monster'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739585348139978228, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81be965c92c4e58418e35029ea5526ec, type: 3}
+    - target: {fileID: 4446073184540434527, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
+      propertyPath: DefaultProjectile
+      value: 
+      objectReference: {fileID: 3385520667200393095, guid: a4dd6de3d114c0c40b36e8a8a311927a, type: 3}
+    - target: {fileID: 8185909400982546795, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12766379
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185909400982546795, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.10291908
       objectReference: {fileID: 0}
     - target: {fileID: 8185909400982546795, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.1474
       objectReference: {fileID: 0}
     - target: {fileID: 8185909400982546795, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2719
       objectReference: {fileID: 0}
     - target: {fileID: 8185909400982546795, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -336,6 +352,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2222939923061481438, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
+      propertyPath: JSON
+      value: 
+      objectReference: {fileID: 4900000, guid: 8321bd28ffd4aaa4abbf4ea347963d84, type: 3}
     - target: {fileID: 2222939923061481438, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
       propertyPath: MainNPC
       value: 
