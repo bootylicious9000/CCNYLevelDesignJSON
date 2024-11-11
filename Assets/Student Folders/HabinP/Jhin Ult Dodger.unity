@@ -268,7 +268,7 @@ MonoBehaviour:
   Body: {fileID: 479625837}
   Anim: {fileID: 479625836}
   Health: 0
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 18d60e777c68cfa4f9b5a49209448423, type: 3}
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
@@ -385,6 +385,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 775650846862172431, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: Health
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 775650846862172431, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: DeathGnome
+      value: 
+      objectReference: {fileID: 4943575786287307083, guid: 974a946151c198a4093daeb2d8a9d04b, type: 3}
     - target: {fileID: 1323700629660496927, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3094
@@ -443,7 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: def4f960090932e49afc3f2dc7ce2122, type: 3}
     - target: {fileID: 4263063251411776512, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_SortingOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6349048642943165602, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_LocalScale.x
@@ -713,6 +721,10 @@ PrefabInstance:
     - target: {fileID: 8749111133736300841, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766310903519893220, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

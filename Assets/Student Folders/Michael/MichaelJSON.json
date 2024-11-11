@@ -1,16 +1,118 @@
 {
-  "Title": "Example Level",
-  "Author": "Michael",
-  "Events": [
-    {"Time": 1,"Who": "Player", "Action": "Flash" },
-    {"Time": 2,"Action": "Shake", "Amt": 0.25},
-    {"Time": 3,"Action": "RandomWalk"},
-    {"Time": 3.65,"Who": "Player", "Action": "Flash"},
-    {"Time": 5,"Action": "Shake", "Amt": 0.25},
-    {"Time": 6,"Who":"Player", "Action": "Shake", "Amt": 0.25},
-    {"Time": 8,"Dialogue": "Hello"},
-    {"Time": 8,"Who":"Player","Action": "Flash"},
-    {"Time": 10,"Dialogue": ""},
-    {"Time": 12}
-  ]
+    "Title": "Example Level",
+    "Author": "Michael",
+    "Events": [
+        {
+            "Time": 0.5,
+            "Who": "Player",
+            "Action": "Flash"
+        },
+        {
+            "Time": 2,
+            "Action": "Shake",
+            "Amt": 0.25
+        },
+        {
+            "Time": 3,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 4.15,
+            "Who": "Player",
+            "Action": "Flash"
+        },
+        {
+            "Time": 5.60,
+            "Action": "Shake",
+            "Amt": 0.25
+        },
+        {
+            "Time": 7,
+            "Who": "Player",
+            "Action": "Shake",
+            "Amt": 0.25
+        },
+        {
+            "Time": 8,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 8,
+            "Who": "Player",
+            "Action": "Flash"
+        },
+        {
+            "Time": 10,
+            "Action": "Flash"
+        },
+        {
+            "Time": 11.5,
+            "Dialogue": "Escúchela"
+        },
+        {
+            "Time": 12.5,
+            "Who": "Player",
+            "Action": "Flash",
+            "Dialogue":  ""
+        },
+        {
+            "Time": 13.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 15,
+            "Action": "SpinShoot"
+        },
+        {
+            "Time": 17.5,
+            "Who": "Player",
+            "Action": "Flash"
+        },
+        {
+            "Time": 19.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 20.5,
+            "Action": "SpinShoot",
+            "Dialogue": "tusslin', arguin' and bustlin'"
+        },
+        {
+            "Time": 22.5,
+            "Action": "RandomWalk",
+            "Dialogue":  ""
+        },
+        {
+            "Time": 24.5,
+            "Dialogue": "hardcore hustlin''"
+        },
+        {
+            "Time": 26,
+            "Action": "SpinShoot"
+        },
+        {
+            "Time": 28,
+            "Dialogue": "My ears is pricked"
+        },
+        {
+            "Time": 29,
+            "Action": "RandomWalk",
+            "Dialogue": "Seekin what will transmit"
+        },
+        {
+            "Time": 30.5,
+            "Action": "SpinShoot",
+            "Dialogue": "apply to transcript"
+        },
+        {
+            "Time": 32.5,
+            "Action": "Flash"
+        },
+        {
+            "Time": 33,
+            "Who": "Player",
+            "Action": "Flash",
+            "Dialogue":  "Yo!"
+        }
+    ]
 }
