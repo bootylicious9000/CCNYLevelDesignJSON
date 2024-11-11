@@ -268,7 +268,7 @@ MonoBehaviour:
   Body: {fileID: 479625837}
   Anim: {fileID: 479625836}
   Health: 0
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 18d60e777c68cfa4f9b5a49209448423, type: 3}
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: Health
       value: 100000
       objectReference: {fileID: 0}
+    - target: {fileID: 775650846862172431, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: DeathGnome
+      value: 
+      objectReference: {fileID: 4943575786287307083, guid: 974a946151c198a4093daeb2d8a9d04b, type: 3}
     - target: {fileID: 1323700629660496927, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3094
