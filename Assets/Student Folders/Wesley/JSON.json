@@ -6,9 +6,11 @@
     {"Time": 2,"Action": "RandomWalk"},
     {"Time": 4,"Action": "RandomWalk"},
     {"Time": 5.5,"Action": "Shake", "Amt": 3},
-    {"Time": 8,"Dialogue": "Well Well"},
+    {"Time": 7,"Dialogue": "Well Well"},
+    {"Time": 8,"Dialogue": "time to shake it up"},
     {"Time": 8,"Who":"Player","Action": "Flash"},
-    {"Time": 10,"Dialogue": "Well well"},
-    {"Time": 12}
+    {"Time": 10,"Anim": "SpinShoot","Action": "RandomWalk"},
+     {"Time": 12,"Anim": "SpinShoot","Action":  "Shake"},
+    {"Time": 13}
   ]
 }
