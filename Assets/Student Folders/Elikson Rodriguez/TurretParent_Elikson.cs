@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ProjectileManager_Elikson : ActorController
+public class TurretParent_Elikson : ActorController
 {
-    private ShootProjectile_Elikson shoot;
+    private Turret_Elikson shoot;
 
     //public GameObject[numCoins] coins;
     //public GameObject[numHealth] health;
