@@ -1,0 +1,16 @@
+{
+  "Title": "Kyle Level 1",
+  "Author": "Kyle Yang",
+  "BPM": "3:15 video, 195 seconds",
+  "Events": [
+    {"Time": 0,"Who":"Monster2","Action": "Flash"},
+    {"Time": 1,"Who":"Monster2","Action": "Flash"},
+    {"Time": 2,"Action": "Flash"},
+    {"Time": 3,"Action": "Flash"},
+    {"Time": 4,"Action": "Flash"},
+    {"Time": 5,"Action": "Flash"},
+    {"Time": 6,"Dialogue": "Start"},
+    {"Time": 7,"Action": "Shake", "Amt": 100},
+    {"Time": 195, "Dialogue": "End"}
+  ]
+}
