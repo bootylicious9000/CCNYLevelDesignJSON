@@ -798,8 +798,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: DGD4 Part 2
-  metroPackageVersion: 
+  metroPackageName: DGD4Part2
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -807,7 +807,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: DGD4 Part 2
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: DGD4 Part 2
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
