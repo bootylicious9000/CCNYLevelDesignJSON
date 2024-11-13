@@ -174,6 +174,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 66182334}
   Speed: 20
 --- !u!1 &92403510
@@ -228,7 +230,65 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 92403511}
+  Speed: 20
+--- !u!1 &119543362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119543363}
+  - component: {fileID: 119543364}
+  m_Layer: 0
+  m_Name: RightShooter (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &119543363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119543362}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &119543364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119543362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 119543363}
   Speed: 20
 --- !u!1 &143638178
 GameObject:
@@ -282,8 +342,70 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 143638179}
   Speed: 20
+--- !u!1 &175949482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175949483}
+  - component: {fileID: 175949484}
+  m_Layer: 0
+  m_Name: LeftShooters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &175949483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175949482}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2142926897}
+  - {fileID: 931528355}
+  - {fileID: 874804002}
+  - {fileID: 1986034288}
+  - {fileID: 848252678}
+  - {fileID: 1575733567}
+  - {fileID: 911120644}
+  - {fileID: 279613492}
+  - {fileID: 398395009}
+  m_Father: {fileID: 2078562162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &175949484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175949482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6142fe79a9a0fcb4392ec8764157d0d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 0}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
 --- !u!1 &188846287
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +458,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 188846288}
   Speed: 20
 --- !u!1 &241047720
@@ -390,6 +514,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 241047721}
   Speed: 20
 --- !u!1 &241954582
@@ -444,7 +570,65 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 241954583}
+  Speed: 20
+--- !u!1 &279613491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 279613492}
+  - component: {fileID: 279613493}
+  m_Layer: 0
+  m_Name: LeftShooter (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &279613492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279613491}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &279613493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279613491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 279613492}
   Speed: 20
 --- !u!1 &313463700
 GameObject:
@@ -498,7 +682,65 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 313463701}
+  Speed: 20
+--- !u!1 &398395008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398395009}
+  - component: {fileID: 398395010}
+  m_Layer: 0
+  m_Name: LeftShooter (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &398395009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398395008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398395010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398395008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 398395009}
   Speed: 20
 --- !u!1 &430738960
 GameObject:
@@ -552,8 +794,70 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 430738961}
   Speed: 20
+--- !u!1 &604629244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604629245}
+  - component: {fileID: 604629246}
+  m_Layer: 0
+  m_Name: RightShooters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &604629245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604629244}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1326266877}
+  - {fileID: 119543363}
+  - {fileID: 1551757059}
+  - {fileID: 1741785047}
+  - {fileID: 1177672321}
+  - {fileID: 1189326012}
+  - {fileID: 1934171102}
+  - {fileID: 744600581}
+  - {fileID: 661972188}
+  m_Father: {fileID: 2078562162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &604629246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604629244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6142fe79a9a0fcb4392ec8764157d0d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 0}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
 --- !u!1 &617809522
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +910,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 617809523}
   Speed: 20
 --- !u!1 &624263306
@@ -660,6 +966,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 624263307}
   Speed: 20
 --- !u!1 &627143929
@@ -714,6 +1022,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 627143930}
   Speed: 20
 --- !u!1 &631893567
@@ -768,7 +1078,121 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 631893568}
+  Speed: 20
+--- !u!1 &661972187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 661972188}
+  - component: {fileID: 661972189}
+  m_Layer: 0
+  m_Name: RightShooter (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &661972188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661972187}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &661972189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661972187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 661972188}
+  Speed: 20
+--- !u!1 &744600580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744600581}
+  - component: {fileID: 744600582}
+  m_Layer: 0
+  m_Name: RightShooter (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744600581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744600580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &744600582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744600580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 744600581}
   Speed: 20
 --- !u!1 &786525593
 GameObject:
@@ -822,6 +1246,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 786525594}
   Speed: 20
 --- !u!1 &803768047
@@ -876,6 +1302,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 803768048}
   Speed: 20
 --- !u!1 &823584801
@@ -930,7 +1358,233 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 823584802}
+  Speed: 20
+--- !u!1 &848252677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848252678}
+  - component: {fileID: 848252679}
+  m_Layer: 0
+  m_Name: LeftShooter (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &848252678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848252677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848252679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848252677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 848252678}
+  Speed: 20
+--- !u!1 &874804001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874804002}
+  - component: {fileID: 874804003}
+  m_Layer: 0
+  m_Name: LeftShooter (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &874804002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874804001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &874804003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874804001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 874804002}
+  Speed: 20
+--- !u!1 &911120643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911120644}
+  - component: {fileID: 911120645}
+  m_Layer: 0
+  m_Name: LeftShooter (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911120644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911120643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &911120645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911120643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 911120644}
+  Speed: 20
+--- !u!1 &931528354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931528355}
+  - component: {fileID: 931528356}
+  m_Layer: 0
+  m_Name: LeftShooter (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &931528355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931528354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931528356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931528354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 931528355}
   Speed: 20
 --- !u!1 &1076500155
 GameObject:
@@ -984,7 +1638,177 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1076500156}
+  Speed: 20
+--- !u!1 &1177672320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1177672321}
+  - component: {fileID: 1177672322}
+  m_Layer: 0
+  m_Name: RightShooter (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1177672321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177672320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1177672322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177672320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1177672321}
+  Speed: 20
+--- !u!1 &1189326011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189326012}
+  - component: {fileID: 1189326013}
+  m_Layer: 0
+  m_Name: RightShooter (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1189326012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189326011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1189326013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189326011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1189326012}
+  Speed: 20
+--- !u!1 &1326266876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326266877}
+  - component: {fileID: 1326266878}
+  m_Layer: 0
+  m_Name: RightShooter (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1326266877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326266876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1326266878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326266876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1326266877}
   Speed: 20
 --- !u!1 &1332770806
 GameObject:
@@ -1038,6 +1862,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1332770807}
   Speed: 20
 --- !u!1 &1370140971
@@ -1092,6 +1918,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1370140972}
   Speed: 20
 --- !u!1 &1422636490
@@ -1146,6 +1974,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1422636491}
   Speed: 20
 --- !u!1 &1443108057
@@ -1200,6 +2030,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1443108058}
   Speed: 20
 --- !u!1 &1537482794
@@ -1320,7 +2152,121 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1550058618}
+  Speed: 20
+--- !u!1 &1551757058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551757059}
+  - component: {fileID: 1551757060}
+  m_Layer: 0
+  m_Name: RightShooter (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1551757059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551757058}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1551757060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551757058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1551757059}
+  Speed: 20
+--- !u!1 &1575733566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575733567}
+  - component: {fileID: 1575733568}
+  m_Layer: 0
+  m_Name: LeftShooter (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1575733567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575733566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1575733568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575733566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1575733567}
   Speed: 20
 --- !u!1 &1682843570
 GameObject:
@@ -1374,7 +2320,65 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1682843571}
+  Speed: 20
+--- !u!1 &1741785046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1741785047}
+  - component: {fileID: 1741785048}
+  m_Layer: 0
+  m_Name: RightShooter (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1741785047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741785046}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1741785048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741785046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1741785047}
   Speed: 20
 --- !u!1 &1836505697
 GameObject:
@@ -1428,6 +2432,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1836505698}
   Speed: 20
 --- !u!1 &1863244907
@@ -1482,6 +2488,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1863244908}
   Speed: 20
 --- !u!1 &1888365867
@@ -1536,6 +2544,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1888365868}
   Speed: 20
 --- !u!1 &1914219572
@@ -1590,6 +2600,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1914219573}
   Speed: 20
 --- !u!1 &1917872873
@@ -1644,7 +2656,65 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1917872874}
+  Speed: 20
+--- !u!1 &1934171101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934171102}
+  - component: {fileID: 1934171103}
+  m_Layer: 0
+  m_Name: RightShooter (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1934171102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934171101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 7.32, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604629245}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1934171103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934171101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1934171102}
   Speed: 20
 --- !u!1 &1954009677
 GameObject:
@@ -1698,6 +2768,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 1954009678}
   Speed: 20
 --- !u!1 &1954710306
@@ -1766,6 +2838,62 @@ MonoBehaviour:
   DefaultProjectile: {fileID: 0}
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
+--- !u!1 &1986034287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1986034288}
+  - component: {fileID: 1986034289}
+  m_Layer: 0
+  m_Name: LeftShooter (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1986034288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986034287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1986034289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986034287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 1986034288}
+  Speed: 20
 --- !u!1 &2078562161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,6 +2925,8 @@ Transform:
   m_Children:
   - {fileID: 1954710307}
   - {fileID: 1537482795}
+  - {fileID: 175949483}
+  - {fileID: 604629245}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106978210
@@ -1851,6 +2981,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 2106978211}
   Speed: 20
 --- !u!1 &2130805502
@@ -1905,6 +3037,8 @@ MonoBehaviour:
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   firePoint: {fileID: 2130805503}
   Speed: 20
 --- !u!1 &2138367580
@@ -1927,7 +3061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2138367583
 Animator:
   serializedVersion: 5
@@ -2108,6 +3242,62 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &2142926896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142926897}
+  - component: {fileID: 2142926898}
+  m_Layer: 0
+  m_Name: LeftShooter (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2142926897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142926896}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 175949483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2142926898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142926896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
+  SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
+  firePoint: {fileID: 2142926897}
+  Speed: 20
 --- !u!61 &120225483157326707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2225,11 +3415,11 @@ MonoBehaviour:
   RB: {fileID: 837640076147317476}
   Body: {fileID: 4263063251229309362}
   Anim: {fileID: 0}
-  Health: 3
+  Health: 4
   DefaultProjectile: {fileID: 0}
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 4943575786287307083, guid: 974a946151c198a4093daeb2d8a9d04b, type: 3}
-  Speed: 5
+  Speed: 4
 --- !u!50 &837640076147317476
 Rigidbody2D:
   serializedVersion: 4
@@ -2330,7 +3520,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6349048643939297552}
@@ -3098,7 +4288,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 54e3be90bbcb41644a35dd96fac7861a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.08
   m_Pitch: 1
   Loop: 0
   Mute: 0

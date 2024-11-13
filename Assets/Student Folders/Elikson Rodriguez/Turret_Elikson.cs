@@ -5,6 +5,8 @@ using UnityEngine;
 public class Turret_Elikson : ActorController
 {
     public GameObject ProjectilePrefab;
+    public GameObject FastProjectilePrefab;
+    public GameObject SlowProjectilePrefab;
     public Transform firePoint;
     public float Speed = 10f;
 
@@ -14,6 +16,14 @@ public class Turret_Elikson : ActorController
         if (act == "ShootProjectile")
         {
             StartCoroutine(ShootProjectile());
+        }
+        if (act == "ShootFastProjectile")
+        {
+            StartCoroutine(ShootFastProjectile());
+        }
+        if (act == "ShootSlowProjectile")
+        {
+            StartCoroutine(ShootSlowProjectile());
         }
     }
 
@@ -27,6 +37,28 @@ public class Turret_Elikson : ActorController
 
         yield return null;
         
+    }
+    public IEnumerator ShootFastProjectile()
+    {
+        //shoots prefab, tracks position and rotation of the tip of the weapon
+        GameObject bullet = Instantiate(FastProjectilePrefab, firePoint.position, firePoint.rotation);
+
+        //the speed the bullet travels
+        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * Speed, ForceMode2D.Impulse);
+
+        yield return null;
+
+    }
+    public IEnumerator ShootSlowProjectile()
+    {
+        //shoots prefab, tracks position and rotation of the tip of the weapon
+        GameObject bullet = Instantiate(SlowProjectilePrefab, firePoint.position, firePoint.rotation);
+
+        //the speed the bullet travels
+        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * Speed, ForceMode2D.Impulse);
+
+        yield return null;
+
     }
     /*public void Fire()
     {
