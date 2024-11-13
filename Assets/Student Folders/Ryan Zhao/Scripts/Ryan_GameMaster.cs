@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 //This class has some useful random little functions
 //You can ignore it, but maybe something within it will be useful to you
-public static class GameMaster
+public static class Ryan_GameMaster
 {
     /// Loads the next scene in the Build Settings queue.
     public static void NextStage()
@@ -47,7 +47,7 @@ public static class GameMaster
         List<T> r = new List<T>();
         while (temp.Count > 0)
         {
-            T chosen = GameMaster.Random(temp);
+            T chosen = Ryan_GameMaster.Random(temp);
             temp.Remove(chosen);
             r.Add(chosen);
         }
@@ -118,7 +118,7 @@ public static class GameMaster
         float t = 0;
         while (t < 1)
         {
-            float tt = GameMaster.Ease (t, Eases.Out);
+            float tt = Ryan_GameMaster.Ease (t, Eases.Out);
             sr.color = new Color(0,0,0,Mathf.Lerp(start,end,tt));
             yield return null;
             t += Time.deltaTime / time;
@@ -130,7 +130,7 @@ public static class GameMaster
 }
 
 //For use with GameMaster.Ease()
-public enum Eases
+public enum Ryan_Eases
 {
     None=0,
     Out=1,
