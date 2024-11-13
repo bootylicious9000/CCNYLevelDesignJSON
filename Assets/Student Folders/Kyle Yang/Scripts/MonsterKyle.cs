@@ -16,6 +16,22 @@ public class MonsterKyle : HazardController
         {
             StartCoroutine(RandomWalk());
         }
+        if (act == "Up")
+        {
+            StartCoroutine(Up(amt));
+        }
+        if (act == "Right")
+        {
+            StartCoroutine(Right(amt));
+        }
+        if (act == "TeleportUp")
+        {
+            StartCoroutine(TeleportUp(amt));
+        }
+        if (act == "TeleportRight")
+        {
+            StartCoroutine(TeleportRight(amt));
+        }
     }
 
     //Get big and move to each corner of the screen
@@ -135,10 +151,49 @@ public class MonsterKyle : HazardController
         }
     }
 
-    // makes things go up
-    public IEnumerable Up()
+    public IEnumerator Up(float amt)
     {
-        //transform.position = Vector3.MoveTowards(transform.position, new Vector3 = transform.position.x, );
+        //I use this to track movement speed
+        float moveSpeed = 5;
+        //This works a lot like the FourSquare movement blocks, but it's just one
+        Vector3 endPos = new Vector3(transform.position.x, amt);
+        while (transform.position != endPos)
+        {
+            //Move a percentage of the way there each frame
+            transform.position = Vector3.Lerp(transform.position, endPos, moveSpeed * Time.deltaTime);
+            //Because Lerp will never actually reach my target, I need to put a tiny MoveTowards in the segment
+            //Otherwise I'll end up 0.000001 units away from my target, forever
+            transform.position = Vector3.MoveTowards(transform.position, endPos, 0.1f * Time.deltaTime);
+            yield return null;
+        }
+    }
+
+    public IEnumerator Right(float amt)
+    {
+        //I use this to track movement speed
+        float moveSpeed = 5;
+        //This works a lot like the FourSquare movement blocks, but it's just one
+        Vector3 endPos = new Vector3(amt, transform.position.y);
+        while (transform.position != endPos)
+        {
+            //Move a percentage of the way there each frame
+            transform.position = Vector3.Lerp(transform.position, endPos, moveSpeed * Time.deltaTime);
+            //Because Lerp will never actually reach my target, I need to put a tiny MoveTowards in the segment
+            //Otherwise I'll end up 0.000001 units away from my target, forever
+            transform.position = Vector3.MoveTowards(transform.position, endPos, 0.1f * Time.deltaTime);
+            yield return null;
+        }
+    }
+
+    public IEnumerator TeleportUp(float amt)
+    {
+        transform.position = new Vector3(transform.position.x, amt, 0);
+        yield return null;
+    }
+
+    public IEnumerator TeleportRight(float amt)
+    {
+        transform.position = new Vector3(amt, transform.position.y, 0);
         yield return null;
     }
 }
