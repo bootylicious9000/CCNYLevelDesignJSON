@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 3385520667200393095}
   - component: {fileID: 6830306966571732234}
   - component: {fileID: -2430997443072315817}
+  - component: {fileID: 1238553654313761046}
   m_Layer: 0
   m_Name: FastProjectile_Elikson
   m_TagString: Projectile
@@ -266,3 +267,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1238553654313761046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4929872375643573239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f20e10028069544281d1b3b225cc9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 0}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  Damage: 1
+  Speed: 10
+  Source: {fileID: 0}

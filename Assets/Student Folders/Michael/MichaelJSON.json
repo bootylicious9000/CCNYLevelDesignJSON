@@ -61,12 +61,15 @@
         },
         {
             "Time": 15,
-            "Action": "SpinShoot"
+            "Action": "MoveUp",
+            "Amt": 1.5,
+            "Anim": "SpinShoot"
         },
         {
             "Time": 17.5,
             "Who": "Player",
-            "Action": "Flash"
+            "Action": "Flash",
+            "Anim": "Idle"
         },
         {
             "Time": 19.5,
@@ -74,45 +77,68 @@
         },
         {
             "Time": 20.5,
-            "Action": "SpinShoot",
-            "Dialogue": "tusslin', arguin' and bustlin'"
+            "Anim": "SpinShoot"
         },
         {
             "Time": 22.5,
-            "Action": "RandomWalk",
-            "Dialogue":  ""
+            "Anim": "Idle",
+            "Action": "RandomWalk"
         },
         {
             "Time": 24.5,
-            "Dialogue": "hardcore hustlin''"
+            "Action": "ShootAtPlayer",
+            "Anim": "Idle"
         },
         {
             "Time": 26,
-            "Action": "SpinShoot"
+            "Anim": "SpinShoot"
         },
         {
             "Time": 28,
-            "Dialogue": "My ears is pricked"
+            "Anim": "Idle",
+            "Action": "MoveUp",
+            "Amt": "1.0"
         },
         {
             "Time": 29,
             "Action": "RandomWalk",
-            "Dialogue": "Seekin what will transmit"
+            "Anim": "Idle"
         },
         {
             "Time": 30.5,
-            "Action": "SpinShoot",
-            "Dialogue": "apply to transcript"
+            "Anim": "SpinShoot"
         },
         {
             "Time": 32.5,
-            "Action": "Flash"
+            "Anim": "Idle",
+            "Action": "Flash",
+            "Action": "RandomWalk"
         },
         {
             "Time": 33,
             "Who": "Player",
             "Action": "Flash",
             "Dialogue":  "Yo!"
+        },
+        {
+            "Time": 34.5,
+            "Action": "MoveRight",
+            "Amt": "2.0"
+        },
+        {
+            "Time": 35,
+            "Action": "MoveLeft",
+            "Amt": "3.5"
+            //change from here
+        },
+        {
+            "Time": 37,
+            "Anim": "Idle",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 39,
+            "Action": "RandomWalk"
         }
     ]
 }

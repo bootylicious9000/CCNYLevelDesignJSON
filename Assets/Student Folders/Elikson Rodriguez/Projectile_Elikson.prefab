@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 5540492209186463458}
   - component: {fileID: 3385520667200393095}
   - component: {fileID: 6830306966571732234}
+  - component: {fileID: 5792972175432430069}
   m_Layer: 0
   m_Name: Projectile_Elikson
   m_TagString: Projectile
@@ -213,3 +214,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5792972175432430069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4929872375643573239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f20e10028069544281d1b3b225cc9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  DefaultProjectile: {fileID: 0}
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  Damage: 1
+  Speed: 10
+  Source: {fileID: 0}

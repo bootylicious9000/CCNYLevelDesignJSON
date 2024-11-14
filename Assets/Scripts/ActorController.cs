@@ -205,7 +205,7 @@ public class ActorController : MonoBehaviour
         foreach (AnimationClip c in Anim.runtimeAnimatorController.animationClips)
         {
             if (c.name == animName)
-                Duration = c.length * Anim.speed;
+                Duration = c.length / Anim.speed;
         }
             
         if (Duration > 0)
@@ -263,6 +263,26 @@ public class ActorController : MonoBehaviour
         else if (act == "TurnOff")
         {
             gameObject.SetActive(false);
+        }
+        else if (act == "SetScale")
+        {
+            transform.localScale = new Vector3(amt, amt, 1);
+        }
+        else if (act == "SetAnimSpeed")
+        {
+            if (Anim != null) Anim.speed = amt;
+        }
+        else if (act == "SetX")
+        {
+            Vector3 pos = transform.position;
+            pos.x = amt;
+            transform.position = pos;
+        }
+        else if (act == "SetY")
+        {
+            Vector3 pos = transform.position;
+            pos.x = amt;
+            transform.position = pos;
         }
     }
 
