@@ -3057,7 +3057,7 @@ GameObject:
   - component: {fileID: 2138367588}
   m_Layer: 0
   m_Name: Monster
-  m_TagString: Hazard
+  m_TagString: Boss_Elikson
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4288,7 +4288,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 54e3be90bbcb41644a35dd96fac7861a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.08
+  m_Volume: 0.52
   m_Pitch: 1
   Loop: 0
   Mute: 0
