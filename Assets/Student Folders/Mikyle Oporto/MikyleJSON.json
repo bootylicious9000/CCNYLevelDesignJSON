@@ -1,0 +1,70 @@
+{
+    "Title": "The Ending...",
+    "Author": "Mikyle Oporto",
+    "Events": [
+      {"Time": 0,"Anim": "FastSpin"},
+      {"Time": 2.5, "Action": "DownSplitFire"},
+      {"Time": 2.5, "Action": "Shoot"},
+      {"Time": 2.5, "Action": "Rotate", "Amt": 180},
+      {"Time": 2.5, "Action": "Shoot"},
+      {"Time": 2.5, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 3, "Action": "DownSplitFire"},
+      {"Time": 3, "Action": "Shoot"},
+      {"Time": 3, "Action": "Rotate", "Amt": 180},
+      {"Time": 3, "Action": "Shoot"},
+      {"Time": 3, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 4, "Action": "DownSplitFire"},
+      {"Time": 4, "Action": "Shoot"},
+      {"Time": 4, "Action": "Rotate", "Amt": 180},
+      {"Time": 4, "Action": "Shoot"},
+      {"Time": 4, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 4.5, "Action": "DownSplitFire"},
+      {"Time": 4.5, "Action": "Shoot"},
+      {"Time": 4.5, "Action": "Rotate", "Amt": 180},
+      {"Time": 4.5, "Action": "Shoot"},
+      {"Time": 4.5, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 5.5, "Action": "UpSplitFire"},
+      {"Time": 5.5, "Action": "Shoot"},
+      {"Time": 5.5, "Action": "Rotate", "Amt": 180},
+      {"Time": 5.5, "Action": "Shoot"},
+      {"Time": 5.5, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 6, "Action": "UpSplitFire"},
+      {"Time": 6, "Action": "Shoot"},
+      {"Time": 6, "Action": "Rotate", "Amt": 180},
+      {"Time": 6, "Action": "Shoot"},
+      {"Time": 6, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 7, "Action": "UpSplitFire"},
+      {"Time": 7, "Action": "Shoot"},
+      {"Time": 7, "Action": "Rotate", "Amt": 180},
+      {"Time": 7, "Action": "Shoot"},
+      {"Time": 7, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 7.5, "Action": "MoveUp", "Amt": 0.875},
+      {"Time": 7.5, "Action": "Shoot"},
+      {"Time": 7.5, "Action": "Rotate", "Amt": 180},
+      {"Time": 7.5, "Action": "Shoot"},
+      {"Time": 7.5, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 8, "Action": "MoveUp", "Amt": 0.875},
+      {"Time": 8, "Action": "Shoot"},
+      {"Time": 8, "Action": "Rotate", "Amt": 180},
+      {"Time": 8, "Action": "Shoot"},
+      {"Time": 8, "Action": "Rotate", "Amt": 180},
+  
+      {"Time": 8.5,"Action": "Shake", "Amt": 3},
+      {"Time": 8.5,"Anim": "SpinShoot"},
+  
+      {"Time": 10,"Dialogue": "Hello"},
+      {"Time": 10,"Who":"Player","Action": "Flash"},
+      {"Time": 15,"Dialogue": ""},
+      {"Time": 16,"Action": "RandomWalk"},
+      {"Time": 16, "Who": "Player", "Action": "Shake"},
+      {"Time": 1}
+    ]
+  }
