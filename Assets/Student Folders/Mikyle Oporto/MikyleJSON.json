@@ -14,7 +14,12 @@
       {"Time": 3, "Action": "Rotate", "Amt": 180},
       {"Time": 3, "Action": "Shoot"},
       {"Time": 3, "Action": "Rotate", "Amt": 180},
-  
+      
+      {"Time": 3.5, "Action": "Shoot"},
+      {"Time": 3.5, "Action": "Rotate", "Amt": 180},
+      {"Time": 3.5, "Action": "Shoot"},
+      {"Time": 3.5, "Action": "Rotate", "Amt": 180},
+
       {"Time": 4, "Action": "DownSplitFire"},
       {"Time": 4, "Action": "Shoot"},
       {"Time": 4, "Action": "Rotate", "Amt": 180},
@@ -51,7 +56,7 @@
       {"Time": 7.5, "Action": "Shoot"},
       {"Time": 7.5, "Action": "Rotate", "Amt": 180},
   
-      {"Time": 8, "Action": "MoveUp", "Amt": 0.875},
+      {"Time": 8, "Action": "MoveUp", "Amt": -1.75},
       {"Time": 8, "Action": "Shoot"},
       {"Time": 8, "Action": "Rotate", "Amt": 180},
       {"Time": 8, "Action": "Shoot"},
@@ -59,12 +64,70 @@
   
       {"Time": 8.5,"Action": "Shake", "Amt": 3},
       {"Time": 8.5,"Anim": "SpinShoot"},
-  
-      {"Time": 10,"Dialogue": "Hello"},
-      {"Time": 10,"Who":"Player","Action": "Flash"},
-      {"Time": 15,"Dialogue": ""},
-      {"Time": 16,"Action": "RandomWalk"},
-      {"Time": 16, "Who": "Player", "Action": "Shake"},
+
+      {"Time": 13, "Action": "Flash", "Amt": 2},
+      {"Time": 14.5, "Who": "MikyleServant(1)", "Action": "SetY", "Amt": 0},
+      {"Time": 15, "Who": "MikyleServant(2)", "Action": "SetY", "Amt": 0},
+      {"Time": 15.01, "Action": "ChangeColor"},
+      {"Time": 15.1, "Action": "SetY", "Amt": 3.88},
+
+      {"Time": 15.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 4},
+      {"Time": 15.25, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": -3.88},
+      {"Time": 15.25, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 4},
+      {"Time": 15.25, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 3.88},
+
+      {"Time": 15.5, "Action": "ShootAtPlayer"},
+
+      {"Time": 16.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 16.25, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": 3.88},
+      {"Time": 16.25, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 16.25, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": -3.88},
+      
+      {"Time": 16, "Action": "ShootAtPlayer"},
+      {"Time": 17, "Action": "ShootAtPlayer"},
+
+      {"Time": 17.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 4},
+      {"Time": 17.25, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": 0},
+      {"Time": 17.25, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 4},
+      {"Time": 17.25, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 0},
+
+      {"Time": 18, "Action": "ShootAtPlayer"},
+
+      {"Time": 18.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 18.25, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": -3.88},
+      {"Time": 18.25, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 18.25, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 3.88},
+
+      {"Time": 19, "Action": "ShootAtPlayer"},
+
+      {"Time": 19, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 3},
+      {"Time": 19, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": 0},
+      {"Time": 19, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 3},
+      {"Time": 19, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 0},
+
+      {"Time": 20, "Action": "ShootAtPlayer"},
+      {"Time": 20.25, "Action": "ShootAtPlayer"},
+
+      {"Time": 20.5, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 20.5, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": -3.88},
+      {"Time": 20.5, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 20.5, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 3.88},
+
+      {"Time": 20.75, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 20.75, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": 3.88},
+      {"Time": 20.75, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 15},
+      {"Time": 20.75, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": -3.88},
+      {"Time": 21, "Action": "MoveToY", "Amt": 0},
+
+
+
+
+      
+      {"Time": 30,"Dialogue": "Hello"},
+      {"Time": 30,"Who":"Player","Action": "Flash"},
+      {"Time": 32,"Dialogue": ""},
+      {"Time": 35,"Action": "RandomWalk"},
+      {"Time": 37, "Who": "Player", "Action": "Shake"},
       {"Time": 1}
     ]
   }

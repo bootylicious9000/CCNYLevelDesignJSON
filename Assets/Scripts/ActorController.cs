@@ -352,7 +352,7 @@ public class ActorController : MonoBehaviour
         else if (act == "SetY")
         {
             Vector3 pos = transform.position;
-            pos.x = amt;
+            pos.y = amt;
             transform.position = pos;
         }
         else if (act == "MoveToX")
