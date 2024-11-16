@@ -11,8 +11,6 @@ public class PlayerController : ActorController
     //A static variable to make the player easy to find
     public static PlayerController Player;
     
-    //Move speed
-    public float Speed = 5;
 
 
     public override void OnAwake()

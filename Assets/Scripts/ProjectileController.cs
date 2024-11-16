@@ -6,13 +6,11 @@ using UnityEngine;
 public class ProjectileController : HazardController
 {
     
-    //How fast I should fly
-    public float Speed = 10;
     
     //Who spawned me
     public ActorController Source;
 
-    public virtual void Setup(ActorController src)
+    public virtual void Setup(ActorController src) 
     {
         //Who spawned you?
         Source = src;
