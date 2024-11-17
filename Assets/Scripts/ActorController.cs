@@ -10,6 +10,8 @@ public class ActorController : MonoBehaviour
     public Rigidbody2D RB;
     //My main sprite
     public SpriteRenderer Body;
+    //My Collider
+    public Collider2D Coll;
     //My animator
     public Animator Anim;
     //My health. MaxHealth records your health at the start of the game
@@ -36,6 +38,8 @@ public class ActorController : MonoBehaviour
     protected  float DesiredRot;
     protected  MoveStyle ChasingDesiredRot = MoveStyle.None;
 
+    protected Color FadeColor;
+
     void Awake()
     {
         //We do this because you can't make Awake virtual
@@ -46,6 +50,8 @@ public class ActorController : MonoBehaviour
     {
         //We do this because you can't make Start virtual
         OnStart();
+        if (Coll == null) Coll = GetComponent<Collider2D>();
+        if (Body) FadeColor = Body.color;
         //The GameManager tracks all the actors that exist in the game
         //Add us to it when the scene begins
         GameManager.Singleton.AddActor(this);
@@ -414,6 +420,25 @@ public class ActorController : MonoBehaviour
             Vector3 pos = PlayerController.Player.transform.position;
             SetDesiredPos(pos,MoveStyle.Lerp);
         }
+        else if (act == "FadeOut")
+        {
+            Color c = Body.color;
+            c.a = 0;
+            StartCoroutine(GameMaster.Fade(Body, c, amt > 0 ? amt : 0.5f));
+        }
+        else if (act == "FadeIn")
+        {
+            StartCoroutine(GameMaster.Fade(Body,FadeColor,amt > 0 ? amt : 0.5f));
+        }
+        else if (act == "HitboxOn")
+        {
+            if (Coll != null) Coll.enabled = true;
+        }
+        else if (act == "HitboxOff")
+        {
+            if (Coll != null) Coll.enabled = false;
+        }
+        
     }
 
     //Makes the actor flash red
