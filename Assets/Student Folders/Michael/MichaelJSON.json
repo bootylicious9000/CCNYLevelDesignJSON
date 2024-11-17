@@ -53,7 +53,7 @@
             "Time": 12.5,
             "Who": "Player",
             "Action": "Flash",
-            "Dialogue":  ""
+            "Dialogue": ""
         },
         {
             "Time": 13.5,
@@ -86,6 +86,62 @@
         },
         {
             "Time": 24.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 24.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 24.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 24.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 24.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 25.9,
             "Action": "ShootAtPlayer",
             "Anim": "Idle"
         },
@@ -111,25 +167,24 @@
         {
             "Time": 32.5,
             "Anim": "Idle",
-            "Action": "Flash",
             "Action": "RandomWalk"
         },
         {
             "Time": 33,
             "Who": "Player",
             "Action": "Flash",
-            "Dialogue":  "Yo!"
+            "Dialogue": "Yo!"
         },
         {
             "Time": 34.5,
             "Action": "MoveRight",
-            "Amt": "2.0"
+            "Amt": "2.0",
+            "Dialogue": ""
         },
         {
             "Time": 35,
             "Action": "MoveLeft",
             "Amt": "3.5"
-            //change from here
         },
         {
             "Time": 37,
@@ -139,6 +194,201 @@
         {
             "Time": 39,
             "Action": "RandomWalk"
+        },
+        {
+            "Time": 40,
+            "Dialogue": "What?",
+            "Action": "Flash"
+        },
+        {
+            "Time": 40.5,
+            "Anim": "SpinShoot"
+        },
+        {
+            "Time": 46,
+            "Action": "Flash",
+            "Anim": "Idle"
+        },
+        {
+            "Time": 46.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 47,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.1,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.2,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.3,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.4,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.5,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.6,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.7,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.8,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 47.9,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.1,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.2,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.3,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.4,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.5,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.6,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.7,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.8,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 48.9,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.1,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.2,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.3,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.4,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.5,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.6,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.7,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.8,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 49.9,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.1,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.2,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.3,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.4,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.5,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.6,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.7,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.8,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 50.9,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 51,
+            "Anim": "ShootAtPlayer"
+        },
+        {
+            "Time": 51.25,
+            "Anim": "Idle"
+        },
+        {
+            "Time": 51.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 52,
+            "Action":  "SpinShoot"
         }
+
     ]
 }
