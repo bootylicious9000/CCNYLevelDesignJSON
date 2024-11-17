@@ -24,6 +24,14 @@ public class MonsterKyle : HazardController
         {
             StartCoroutine(Right(amt));
         }
+        if (act == "TopDiagonal")
+        {
+            StartCoroutine(TopDiagonal(amt));
+        }
+        if (act == "BottomDiagonal")
+        {
+            StartCoroutine(BottomDiagonal(amt));
+        }
         if (act == "TeleportUp")
         {
             StartCoroutine(TeleportUp(amt));
@@ -154,7 +162,7 @@ public class MonsterKyle : HazardController
     public IEnumerator Up(float amt)
     {
         //I use this to track movement speed
-        float moveSpeed = 5;
+        float moveSpeed = 20;
         //This works a lot like the FourSquare movement blocks, but it's just one
         Vector3 endPos = new Vector3(transform.position.x, amt);
         while (transform.position != endPos)
@@ -171,9 +179,43 @@ public class MonsterKyle : HazardController
     public IEnumerator Right(float amt)
     {
         //I use this to track movement speed
-        float moveSpeed = 5;
+        float moveSpeed = 20;
         //This works a lot like the FourSquare movement blocks, but it's just one
         Vector3 endPos = new Vector3(amt, transform.position.y);
+        while (transform.position != endPos)
+        {
+            //Move a percentage of the way there each frame
+            transform.position = Vector3.Lerp(transform.position, endPos, moveSpeed * Time.deltaTime);
+            //Because Lerp will never actually reach my target, I need to put a tiny MoveTowards in the segment
+            //Otherwise I'll end up 0.000001 units away from my target, forever
+            transform.position = Vector3.MoveTowards(transform.position, endPos, 0.1f * Time.deltaTime);
+            yield return null;
+        }
+    }
+
+    public IEnumerator BottomDiagonal(float amt)
+    {
+        //I use this to track movement speed
+        float moveSpeed = 20;
+        //This works a lot like the FourSquare movement blocks, but it's just one
+        Vector3 endPos = new Vector3(amt, -3);
+        while (transform.position != endPos)
+        {
+            //Move a percentage of the way there each frame
+            transform.position = Vector3.Lerp(transform.position, endPos, moveSpeed * Time.deltaTime);
+            //Because Lerp will never actually reach my target, I need to put a tiny MoveTowards in the segment
+            //Otherwise I'll end up 0.000001 units away from my target, forever
+            transform.position = Vector3.MoveTowards(transform.position, endPos, 0.1f * Time.deltaTime);
+            yield return null;
+        }
+    }
+
+    public IEnumerator TopDiagonal(float amt)
+    {
+        //I use this to track movement speed
+        float moveSpeed = 20;
+        //This works a lot like the FourSquare movement blocks, but it's just one
+        Vector3 endPos = new Vector3(amt, 3);
         while (transform.position != endPos)
         {
             //Move a percentage of the way there each frame
