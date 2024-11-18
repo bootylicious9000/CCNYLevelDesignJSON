@@ -686,8 +686,734 @@
             "Action": "ShootAtPlayer"
         },
         {
-            "Time": 65,
+            "Time": 67.25,
+            "Anim": "Idle"
+        },
+        {
+            "Time": 67.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 68,
+            "Anim": "SpinShoot"
+        },
+        {
+            "Time": 71,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 71.5,
+            "Action": "Flash"
+        },
+        {
+            "Time": 71.51,
+            "Who": "Player",
+            "Action": "Flash"
+        },
+        {
+            "Time": 72,
             "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 71,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 71.5,
+            "Action": "Flash"
+        },
+        {
+            "Time": 71.51,
+            "Who": "Player",
+            "Action": "Flash"
+        },
+        {
+            "Time": 72,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 72.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 73.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 74.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 75.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 76.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 77.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 78.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 79.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 80.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 81,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 81.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 82,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 82.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 83,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 83.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 84,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 84.5,
+            "Anim": "SpinShoot"
+        },
+        {
+            "Time": "89",
+            "Action": "Shake",
+            "Amt": 0.25
+        },
+        {
+            "Time": "90",
+            "Action": "Flash"
+        },
+        {
+            "Time": "90.5",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "91",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "91.5",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "92",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "92.5",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "93",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "93.5",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "94",
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": "94.5",
+            "Action": "Shake",
+            "Amt": "0.25"
+        },
+        {
+            "Time": "95",
+            "Action": "Flash"
+        },
+        {
+            "Time": "95.5",
+            "Anim": "SpinShoot"
+        },
+        {
+            "Time": "99.5",
+            "Anim": "Idle"
+        },
+        {
+            "Time": 100,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 100.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 101,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 101.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 102,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 102.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 103,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 103.5,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 104,
+            "Action": "RandomWalk"
+        },
+        {
+            "Time": 104.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 105,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 105.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 105.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 105.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 106.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 107.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.1,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.2,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.3,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.4,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.5,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.6,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.7,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.8,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 108.9,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 109,
+            "Action": "ShootAtPlayer"
+        },
+        {
+            "Time": 110,
+            "Action": "Shake",
+            "Amt": 0.25
+        },
+        {
+            "Time": 110.1,
+            "Who": "Player",
+            "Action":  "Flash"
+        },
+        {
+            "Time": 110.5,
+            "Action":  "RandomWalk"
         }
     ]
 }
