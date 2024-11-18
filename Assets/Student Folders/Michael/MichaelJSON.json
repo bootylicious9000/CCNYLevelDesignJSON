@@ -176,20 +176,19 @@
             "Dialogue": "Yo!"
         },
         {
-            "Time": 34.5,
+            "Time": 34,
             "Action": "MoveRight",
-            "Amt": "2.0",
+            "Amt": "3.0",
             "Dialogue": ""
         },
         {
             "Time": 35,
             "Action": "MoveLeft",
-            "Amt": "3.5"
+            "Amt": "3.0"
         },
         {
-            "Time": 37,
-            "Anim": "Idle",
-            "Action": "RandomWalk"
+            "Time": 36,
+            "Anim": "SpinShoot"
         },
         {
             "Time": 39,
@@ -197,6 +196,7 @@
         },
         {
             "Time": 40,
+            "Anim": "Idle",
             "Dialogue": "What?",
             "Action": "Flash"
         },
@@ -1136,15 +1136,7 @@
             "Action": "ShootAtPlayer"
         },
         {
-            "Time": 81.5,
-            "Action": "RandomWalk"
-        },
-        {
             "Time": 82,
-            "Action": "RandomWalk"
-        },
-        {
-            "Time": 82.5,
             "Action": "RandomWalk"
         },
         {
@@ -1152,15 +1144,11 @@
             "Action": "RandomWalk"
         },
         {
-            "Time": 83.5,
-            "Action": "RandomWalk"
-        },
-        {
             "Time": 84,
             "Action": "RandomWalk"
         },
         {
-            "Time": 84.5,
+            "Time": 85,
             "Anim": "SpinShoot"
         },
         {
@@ -1173,15 +1161,7 @@
             "Action": "Flash"
         },
         {
-            "Time": "90.5",
-            "Action": "RandomWalk"
-        },
-        {
             "Time": "91",
-            "Action": "RandomWalk"
-        },
-        {
-            "Time": "91.5",
             "Action": "RandomWalk"
         },
         {
@@ -1189,15 +1169,7 @@
             "Action": "RandomWalk"
         },
         {
-            "Time": "92.5",
-            "Action": "RandomWalk"
-        },
-        {
             "Time": "93",
-            "Action": "RandomWalk"
-        },
-        {
-            "Time": "93.5",
             "Action": "RandomWalk"
         },
         {
@@ -1226,15 +1198,7 @@
             "Action": "RandomWalk"
         },
         {
-            "Time": 100.5,
-            "Action": "RandomWalk"
-        },
-        {
             "Time": 101,
-            "Action": "RandomWalk"
-        },
-        {
-            "Time": 101.5,
             "Action": "RandomWalk"
         },
         {
@@ -1242,15 +1206,7 @@
             "Action": "RandomWalk"
         },
         {
-            "Time": 102.5,
-            "Action": "RandomWalk"
-        },
-        {
             "Time": 103,
-            "Action": "RandomWalk"
-        },
-        {
-            "Time": 103.5,
             "Action": "RandomWalk"
         },
         {

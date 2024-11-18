@@ -7378,7 +7378,7 @@ Transform:
   m_GameObject: {fileID: 2138367580}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.39, z: 0}
+  m_LocalPosition: {x: 8.84, y: 3.48, z: 0}
   m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7398,12 +7398,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 2138367589}
   Body: {fileID: 2138367584}
-  Coll: {fileID: 0}
+  Coll: {fileID: 2138367588}
   Anim: {fileID: 2138367583}
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
   ALtProjectiles: []
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -7709,7 +7709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1000025754636380809
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8533,7 +8533,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 54e3be90bbcb41644a35dd96fac7861a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
