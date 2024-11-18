@@ -178,13 +178,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 6830306966571732234}
   Body: {fileID: 0}
+  Coll: {fileID: 0}
   Anim: {fileID: 0}
   Health: 0
+  Speed: 3
+  SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
+  ALtProjectiles: []
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
-  Speed: 10
   Source: {fileID: 0}
 --- !u!50 &6830306966571732234
 Rigidbody2D:

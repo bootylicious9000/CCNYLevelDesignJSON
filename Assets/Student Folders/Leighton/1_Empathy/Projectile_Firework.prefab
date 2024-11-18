@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1835986259930159840}
-  - component: {fileID: 7152434964074047638}
   - component: {fileID: 3197427975651680572}
+  - component: {fileID: 1943987759914393558}
   m_Layer: 0
   m_Name: Projectile_Firework
   m_TagString: Projectile
@@ -34,30 +34,6 @@ Transform:
   - {fileID: 7006020831153122121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7152434964074047638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141928273680168853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 729462c60b14d1e4cab63198554f6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RB: {fileID: 3197427975651680572}
-  Body: {fileID: 0}
-  Anim: {fileID: 0}
-  Health: 0
-  Speed: 10
-  SpinSpeed: 5
-  DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
-  ShootGnome: {fileID: 0}
-  DeathGnome: {fileID: 0}
-  Damage: 1
-  Source: {fileID: 0}
 --- !u!50 &3197427975651680572
 Rigidbody2D:
   serializedVersion: 4
@@ -85,6 +61,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1943987759914393558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141928273680168853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab8b85b668c6ae4582c723ac1527167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 0}
+  Body: {fileID: 0}
+  Coll: {fileID: 0}
+  Anim: {fileID: 0}
+  Health: 0
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 0}
+  ALtProjectiles: []
+  ShootGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+  Damage: 1
+  Source: {fileID: 0}
 --- !u!1 &7837794791771047616
 GameObject:
   m_ObjectHideFlags: 0
