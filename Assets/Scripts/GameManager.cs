@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
 
     public void AddActor(ActorController a)
     {
-        if (Actors.Contains(a)) return;
+        if (a == null || Actors.Contains(a)) return;
         Actors.Add(a);
         if(!ActorDict.ContainsKey(a.gameObject.name))
             ActorDict.Add(a.gameObject.name,new List<ActorController>());

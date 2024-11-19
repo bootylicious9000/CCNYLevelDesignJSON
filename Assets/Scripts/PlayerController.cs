@@ -19,8 +19,9 @@ public class PlayerController : ActorController
         Player = this;
     }
 
-    void Update()
+    public override void OnUpdate()
     {
+        base.OnUpdate();
         //You've seen this movement code before
         Vector2 vel = RB.velocity;
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
