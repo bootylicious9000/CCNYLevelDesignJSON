@@ -47,7 +47,7 @@ public static class GameMaster
         List<T> r = new List<T>();
         while (temp.Count > 0)
         {
-            T chosen = GameMaster.Random(temp);
+            T chosen = temp.Random();
             temp.Remove(chosen);
             r.Add(chosen);
         }
