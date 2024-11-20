@@ -1,0 +1,14 @@
+{
+  "Title": "Burn It All Down",
+  "Author": "Ft. PVRIS and League of Legends",
+  "Events": [
+    {"Time": 0,"Anim": "Idle"},
+    {"Time": 8.5,"Anim": "MoveLeft"},
+    {"Time": 9,"Anim": "Top_Shoot_Left"},
+    {"Time": 10.5,"Anim": "Move_right"},
+    {"Time": 11,"Anim": "Top_Shoot_Right"},
+    {"Time": 8,"Who":"Player","Action": "Flash"},
+    {"Time": 10,"Dialogue": ""},
+    {"Time": 12}
+  ]
+}
