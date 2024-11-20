@@ -25,7 +25,7 @@ private bool RoundBegun = false;
 
 private void Awake()
 {
-        GameManager.Singleton = this;
+        //GameManager.Singleton = this;
 
 }
 
