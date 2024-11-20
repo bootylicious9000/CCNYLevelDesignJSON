@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8185909400982546795}
-  - component: {fileID: 4446073184540434527}
+  - component: {fileID: 2748724145946597537}
   - component: {fileID: 7629057881739277528}
   - component: {fileID: -3541093684125484274}
   - component: {fileID: 3739585348139978228}
@@ -36,7 +36,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4446073184540434527
+--- !u!114 &2748724145946597537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,14 +45,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1558863088311700548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 355729e39eff5544e84c03e694f0c740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0219bb93248ffaa4dbd7b47803e50978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   RB: {fileID: -3541093684125484274}
   Body: {fileID: 3739585348139978228}
   Anim: {fileID: 6628546495624261682}
   Health: 0
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 3385520667200393095, guid: ee6cb5067754fc64ebb68c98817d25e5, type: 3}
+  ALtProjectiles: []
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
@@ -116,7 +119,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

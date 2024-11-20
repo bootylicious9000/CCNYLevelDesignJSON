@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6564949920982396767}
   - component: {fileID: 3964363955361036647}
   - component: {fileID: 7469796688124284863}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eea20e5de4c7aec49abf51e52cf4ce5c, type: 3}
-  m_Color: {r: 1, g: 0.9005027, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9005027, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -142,8 +142,7 @@ GameObject:
   - component: {fileID: 3385520667200393095}
   - component: {fileID: 6830306966571732234}
   - component: {fileID: -2430997443072315817}
-  - component: {fileID: 1307243180947866858}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SlowProjectile_Elikson
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -180,13 +179,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 6830306966571732234}
   Body: {fileID: 0}
+  Coll: {fileID: 0}
   Anim: {fileID: 0}
   Health: 0
+  Speed: 3
+  SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
+  ALtProjectiles: []
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
-  Speed: 3
   Source: {fileID: 0}
 --- !u!50 &6830306966571732234
 Rigidbody2D:
@@ -267,25 +269,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1307243180947866858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4929872375643573239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f20e10028069544281d1b3b225cc9dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RB: {fileID: 0}
-  Body: {fileID: 0}
-  Anim: {fileID: 0}
-  Health: 0
-  DefaultProjectile: {fileID: 0}
-  ShootGnome: {fileID: 0}
-  DeathGnome: {fileID: 0}
-  Damage: 1
-  Speed: 10
-  Source: {fileID: 0}
