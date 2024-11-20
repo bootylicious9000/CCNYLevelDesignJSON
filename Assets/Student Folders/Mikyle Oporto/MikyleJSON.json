@@ -68,10 +68,11 @@
     {"Time": 14.5, "Who": "MikyleServant(1)", "Action": "SetY", "Amt": 0},
     {"Time": 15, "Who": "MikyleServant(2)", "Action": "SetY", "Amt": 0},
     {"Time": 15.01, "Action": "ChangeColor"},
-    {"Time": 15.1, "Action": "SetY", "Amt": 3.88},
-    {"Time": 15, "Anim": "Idle"},
-    {"Time": 15.001, "Action": "ChangeColor"},
     {"Time": 15.1, "Action": "MoveToY", "Amt": 3.88},
+    {"Time": 15, "Anim": "Idle"},
+    {"Time": 15, "Action": "ChangeColor"},
+    
+
 
     {"Time": 15.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 4},
     {"Time": 15.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 5},
@@ -89,9 +90,7 @@
     {"Time": 16.25, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 20},
     {"Time": 16.25, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": -3.88},
     
-    {"Time": 16, "Action": "ShootAtPlayer"},
-    {"Time": 17, "Action": "ShootAtPlayer"},
-    {"Time": 16.25, "Action": "ShootAtPlayer"},
+    {"Time": 16.5, "Action": "ShootAtPlayer"},
 
     {"Time": 17.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 4},
     {"Time": 17.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 5},
@@ -101,7 +100,6 @@
     {"Time": 17.25, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 0},
 
     {"Time": 17.25, "Action": "ShootAtPlayer"},
-    {"Time": 18, "Action": "ShootAtPlayer"},
 
     {"Time": 18.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 15},
     {"Time": 18.25, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 20},
@@ -110,8 +108,7 @@
     {"Time": 18.25, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 20},
     {"Time": 18.25, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 3.88},
 
-    {"Time": 19, "Action": "ShootAtPlayer"},
-    {"Time": 18.75, "Action": "ShootAtPlayer"},
+    {"Time": 18.25, "Action": "ShootAtPlayer"},
 
     {"Time": 19, "Who": "MikyleServant(1)", "Action": "SetSpeed", "Amt": 3},
     {"Time": 19, "Who": "MikyleServant(1)", "Action": "MoveToY", "Amt": 0},
@@ -122,8 +119,8 @@
     {"Time": 18.75, "Who": "MikyleServant(2)", "Action": "SetSpeed", "Amt": 3},
     {"Time": 18.75, "Who": "MikyleServant(2)", "Action": "MoveToY", "Amt": 0},
 
-    {"Time": 19.75, "Action": "ShootAtPlayer"},
-
+    {"Time": 18.75, "Action": "ShootAtPlayer"},
+    {"Time": 19, "Action": "ShootAtPlayer"},
     {"Time": 20, "Action": "ShootAtPlayer"},
     {"Time": 20.25, "Action": "ShootAtPlayer"},
 
@@ -176,6 +173,8 @@
     {"Time": 26, "Who": "MikyleServant(2)", "Action": "TurnOff"},
     {"Time": 26, "Anim": "Idle"},
     {"Time": 26, "Action": "HitboxOff"},
+
+
 
     {"Time": 27.5, "Action": "RandomTeleport"},
     {"Time": 28, "Action": "Shoot"},
@@ -248,7 +247,6 @@
     {"Time": 32.5, "Action": "Rotate", "Amt": 315},
     {"Time": 32.5, "Action": "Shoot"},
     {"Time": 32.5, "Action": "Rotate", "Amt": 360},
-
     
     {"Time": 33.5, "Who": "MikyleServant(1)", "Action": "TurnOn"},
     {"Time": 34, "Who": "MikyleServant(1)", "Action": "TurnOff"},
@@ -258,6 +256,8 @@
     {"Time": 34.5, "Who": "MikyleServant(1)", "Action": "TurnOn"},
     {"Time": 34.5, "Who": "MikyleServant(2)", "Action": "TurnOff"},
     
+
+
     {"Time": 34.5, "Action": "RandomTeleport"},
     {"Time": 34.75, "Action": "Shoot"},
     {"Time": 34.75, "Action": "Rotate", "Amt": 45},
@@ -360,6 +360,8 @@
     {"Time": 40, "Who": "MikyleServant(2)", "Action": "SetY", "Amt": -3.72},
     {"Time": 40.5, "Who":"MikyleServant(2)","Action": "TurnOn"},
 
+
+
     {"Time": 41, "Action": "RandomTeleport"},
     {"Time": 41.25, "Action": "Shoot"},
     {"Time": 41.25, "Action": "Rotate", "Amt": 45},
@@ -380,8 +382,11 @@
 
     {"Time": 41.50, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
     {"Time": 41.50, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
-
+  
+    {"Time": 42.25, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 42.25, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
     {"Time": 42.25, "Action": "RandomTeleport"},
+
     {"Time": 42.5, "Action": "Shoot"},
     {"Time": 42.5, "Action": "Rotate", "Amt": 45},
     {"Time": 42.5, "Action": "Shoot"},
@@ -399,10 +404,13 @@
     {"Time": 42.5, "Action": "Shoot"},
     {"Time": 42.5, "Action": "Rotate", "Amt": 360},
 
-    {"Time": 42.75, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
-    {"Time": 42.75, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
-
+    {"Time": 43, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 43, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
+    
+    {"Time": 43.75, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 43.75, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
     {"Time": 43.75, "Action": "RandomTeleport"},
+
     {"Time": 44, "Action": "Shoot"},
     {"Time": 44, "Action": "Rotate", "Amt": 45},
     {"Time": 44, "Action": "Shoot"},
@@ -420,52 +428,59 @@
     {"Time": 44, "Action": "Shoot"},
     {"Time": 44, "Action": "Rotate", "Amt": 360},
 
-    {"Time": 44.25, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
-    {"Time": 44.25, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
+    {"Time": 44.5, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 44.5, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
 
-    {"Time": 45, "Action": "RandomTeleport"},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 45},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 90},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 135},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 180},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 225},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 270},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 315},
-    {"Time": 45.25, "Action": "Shoot"},
-    {"Time": 45.25, "Action": "Rotate", "Amt": 360},
+    {"Time": 45.25, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 45.25, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
+    {"Time": 45.25, "Action": "RandomTeleport"},
 
-    {"Time": 45.75, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
-    {"Time": 45.75, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 45},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 90},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 135},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 180},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 225},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 270},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 315},
+    {"Time": 45.5, "Action": "Shoot"},
+    {"Time": 45.5, "Action": "Rotate", "Amt": 360},
 
-    {"Time": 46.5, "Action": "RandomTeleport"},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 45},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 90},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 135},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 180},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 225},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 270},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 315},
-    {"Time": 46.75, "Action": "Shoot"},
-    {"Time": 46.75, "Action": "Rotate", "Amt": 360},
+    {"Time": 46, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 46, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
+
+    {"Time": 46.75, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 46.75, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
+    {"Time": 46.75, "Action": "RandomTeleport"},
+
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 45},
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 90},
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 135},
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 180},
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 225},
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 270},
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 315},
+    {"Time": 47, "Action": "Shoot"},
+    {"Time": 47, "Action": "Rotate", "Amt": 360},
 
     {"Time": 47.5, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
     {"Time": 47.5, "Who": "MikyleServant(2)", "Action": "ShootAtPlayer"},
 
     {"Time": 48.25, "Action": "RandomTeleport"},
+
     {"Time": 48.5, "Action": "Shoot"},
     {"Time": 48.5, "Action": "Rotate", "Amt": 45},
     {"Time": 48.5, "Action": "Shoot"},
@@ -482,7 +497,6 @@
     {"Time": 48.5, "Action": "Rotate", "Amt": 315},
     {"Time": 48.5, "Action": "Shoot"},
     {"Time": 48.5, "Action": "Rotate", "Amt": 360},
-
 
 
     
