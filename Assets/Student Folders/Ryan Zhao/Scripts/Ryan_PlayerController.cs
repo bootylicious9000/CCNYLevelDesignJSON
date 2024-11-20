@@ -1,47 +1,18 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Ryan_PlayerController : Ryan_ActorController
+public class Ryan_PlayerController : PlayerController
 {
-    //A static variable to make the player easy to find
-    public static Ryan_PlayerController Player;
-    
-    //Move speed
-    public float Speed = 5;
-
-
-    public override void OnAwake()
+    // Start is called before the first frame update
+    void Start()
     {
-        base.OnAwake();
-        Player = this;
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
-        //You've seen this movement code before
-        Vector2 vel = RB.velocity;
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            vel.x = Speed;
-        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            vel.x = -Speed;
-        else
-        {
-            vel.x = 0;
-        }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-            vel.y = Speed;
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-            vel.y = -Speed;
-        else
-        {
-            vel.y = 0;
-        }
-        RB.velocity = vel;
+        
     }
-
 }
