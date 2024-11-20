@@ -11,8 +11,6 @@ public class PlayerController : ActorController
     //A static variable to make the player easy to find
     public static PlayerController Player;
     
-    //Move speed
-    public float Speed = 5;
 
 
     public override void OnAwake()
@@ -21,8 +19,9 @@ public class PlayerController : ActorController
         Player = this;
     }
 
-    void Update()
+    public override void OnUpdate()
     {
+        base.OnUpdate();
         //You've seen this movement code before
         Vector2 vel = RB.velocity;
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))

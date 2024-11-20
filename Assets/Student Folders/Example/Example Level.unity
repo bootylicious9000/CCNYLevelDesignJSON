@@ -263,6 +263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Example Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 4446073184540434527, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
+      propertyPath: SpinSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8185909400982546795, guid: 0ac402b4df1dfb642948a77d14cf986d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

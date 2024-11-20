@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class MonsterMovement : HazardController
+public class MonsterMovement : ActorController
 {
     public override void DoAction(string act, float amt = 0)
     {

@@ -24,6 +24,22 @@ public class MikyleMonster : HazardController
         {
             StartCoroutine(UpSplitFire());
         }
+        if (act == "ChangeColor")
+        {
+            StartCoroutine(ChangeColor());
+        }
+        if (act == "FullUpDownColumn")
+        {
+            StartCoroutine(FullUpDownColumn(amt));
+        }
+        if (act == "RandomTeleport")
+        {
+            StartCoroutine(RandomTeleport());
+        }
+        if (act == "FlashWhite")
+        {
+            StartCoroutine(FlashWhite(amt));
+        }
     }
 
     //Get big and move to each corner of the screen
@@ -153,7 +169,7 @@ public class MikyleMonster : HazardController
 
         //Tracks my position at the end of a segment
         Vector3 endPos = new Vector3(0, transform.position.y - 1.75f);
-        //Move to the top of the screen and get big
+        
         //This is an example of a timer used in a coroutine--it'll always take exactly 0.5 seconds
         while (timer < 1)
         {
@@ -163,6 +179,8 @@ public class MikyleMonster : HazardController
 
             //Same deal, but now with position instead of size
             transform.position = Vector3.Lerp(startPos, endPos, timer);
+
+            //I can put the Shoot() function in there to create a bullet spawn every second
             
             yield return null;
         }
@@ -179,7 +197,8 @@ public class MikyleMonster : HazardController
 
         //Tracks my position at the end of a segment
         Vector3 endPos = new Vector3(0, transform.position.y + 1.75f);
-        //Move to the top of the screen and get big
+        
+
         //This is an example of a timer used in a coroutine--it'll always take exactly 0.5 seconds
         while (timer < 1)
         {
@@ -192,5 +211,65 @@ public class MikyleMonster : HazardController
             transform.position = Vector3.Lerp(startPos, endPos, timer);
             yield return null;
         }
+    }
+
+    public IEnumerator ChangeColor()
+    {
+        Color c = Color.magenta;
+        yield return null;
+        Body.color = c;
+        
+    }
+
+    public IEnumerator FullUpDownColumn(float amt)
+    {
+        //A simple timer
+        float timer = 0;
+
+        //Tracks my position at the start of a segment
+        Vector3 startPos = transform.position;
+
+        //Tracks my position at the end of a segment
+        Vector3 endPos = new Vector3(transform.position.x, transform.position.y + amt);
+
+        
+        //This is an example of a timer used in a coroutine--it'll always take exactly 0.5 seconds
+        while (timer < 1)
+        {
+            //Note that timer is always a number between 0 and 1--if I want time to pass slow or fast
+            //  I just divide or multiple timer by another number to make it change at not-deltaTime
+            timer += Time.deltaTime / 0.25f;
+            //I use Lerp to determine how big I should be each frame
+
+            //Same deal, but now with position instead of size
+            transform.position = Vector3.Lerp(startPos, endPos, timer);
+            yield return null;
+        }
+    }
+
+    public IEnumerator RandomTeleport()
+    {
+        transform.position = new Vector3(Random.Range(-5.5f,5.5f),Random.Range(-2.5f,2.5f));
+        yield return null;
+    }
+
+    public IEnumerator FlashWhite(float amt)
+    {
+        if (amt <= 0) amt = 0.5f;
+        float bigTime = amt;
+        float smTime = 0.1f;
+        Color c = Body.color;
+        while (bigTime > 0)
+        {
+            bigTime -= Time.deltaTime;
+            smTime -= Time.deltaTime;
+            if (smTime <= 0)
+            {
+                smTime = 0.1f;
+                Body.color = Body.color == c ? Color.white : c;
+            }
+            yield return null;
+        }
+        Body.color = c;
     }
 }

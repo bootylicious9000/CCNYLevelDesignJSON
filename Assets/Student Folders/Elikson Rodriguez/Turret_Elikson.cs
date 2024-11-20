@@ -7,6 +7,7 @@ public class Turret_Elikson : ActorController
     public GameObject ProjectilePrefab;
     public GameObject FastProjectilePrefab;
     public GameObject SlowProjectilePrefab;
+    public GameObject SpikyProjectilePrefab;
     public Transform firePoint;
     public float Speed = 10f;
 
@@ -24,6 +25,10 @@ public class Turret_Elikson : ActorController
         if (act == "ShootSlowProjectile")
         {
             StartCoroutine(ShootSlowProjectile());
+        }
+        if (act == "ShootSpikyProjectile")
+        {
+            StartCoroutine(ShootSpikyProjectile());
         }
     }
 
@@ -60,13 +65,15 @@ public class Turret_Elikson : ActorController
         yield return null;
 
     }
-    /*public void Fire()
+    public IEnumerator ShootSpikyProjectile()
     {
         //shoots prefab, tracks position and rotation of the tip of the weapon
-        GameObject bullet = Instantiate(ProjectilePrefab, firePoint.position, firePoint.rotation);
+        GameObject bullet = Instantiate(SpikyProjectilePrefab, firePoint.position, firePoint.rotation);
 
         //the speed the bullet travels
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * Speed, ForceMode2D.Impulse);
 
-    }*/
+        yield return null;
+
+    }
 }

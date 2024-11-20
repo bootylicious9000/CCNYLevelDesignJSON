@@ -10,21 +10,38 @@ public class ActorController : MonoBehaviour
     public Rigidbody2D RB;
     //My main sprite
     public SpriteRenderer Body;
+    //My Collider
+    public Collider2D Coll;
     //My animator
     public Animator Anim;
     //My health. MaxHealth records your health at the start of the game
     public float Health;
-    private float MaxHealth;
+    protected float MaxHealth;
+    public float Speed = 5;
+    public float SpinSpeed = 5;
+    // public float LerpSpeed = 0.1f;
     
     //Your default projectile. Leave null if this object doesn't shoot
     public ProjectileController DefaultProjectile;
+
+    public List<ProjectileController> ALtProjectiles;
     //Spawns this gnome (particle and audio emitter) when you shoot 
     public GnomeScript ShootGnome;
+    //Spawns this gnome (particle and audio emitter) when you take damage 
+    public GnomeScript HurtGnome;
     //Spawns this gnome (particle and audio emitter) when you die
     public GnomeScript DeathGnome;
 
-    private bool HasIdle = false;
-    private string CurrentAnim = "";
+    protected  bool HasIdle = false;
+    protected  string CurrentAnim = "";
+
+    protected Vector3 DesiredPos;
+    protected  MoveStyle ChasingDesiredPos = MoveStyle.None;
+    protected  float DesiredRot;
+    protected  MoveStyle ChasingDesiredRot = MoveStyle.None;
+
+    protected Color FadeColor;
+    protected float IFrames = 0;
 
     void Awake()
     {
@@ -36,10 +53,12 @@ public class ActorController : MonoBehaviour
     {
         //We do this because you can't make Start virtual
         OnStart();
+        if (Coll == null) Coll = GetComponent<Collider2D>();
+        if (Body) FadeColor = Body.color;
         //The GameManager tracks all the actors that exist in the game
         //Add us to it when the scene begins
         GameManager.Singleton.AddActor(this);
-
+        
         if (Anim != null)
         {
             foreach (AnimationClip c in Anim.runtimeAnimatorController.animationClips)
@@ -48,6 +67,15 @@ public class ActorController : MonoBehaviour
                     HasIdle = true;
             }
         }
+    }
+
+    void Update()
+    {
+        if (IFrames > 0)
+        {
+            IFrames -= Time.deltaTime;
+        }
+        OnUpdate();
     }
 
     public virtual void OnAwake()
@@ -61,13 +89,67 @@ public class ActorController : MonoBehaviour
         
     }
     
+    public virtual void OnUpdate()
+    {
+        if (ChasingDesiredPos == MoveStyle.Linear)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, DesiredPos, Speed * Time.deltaTime);
+            if (Vector2.Distance(transform.position, DesiredPos) < 0.1f)
+            {
+                ChasingDesiredPos = MoveStyle.None;
+            }
+        }
+        else if (ChasingDesiredPos == MoveStyle.Lerp)
+        {
+            transform.position = Vector3.Lerp(transform.position, DesiredPos, Speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, DesiredPos, 0.01f);
+            if (Vector2.Distance(transform.position, DesiredPos) < 0.01f)
+            {
+                ChasingDesiredPos = MoveStyle.None;
+            }
+        }
+        if (ChasingDesiredRot == MoveStyle.Linear)
+        {
+            transform.rotation = Quaternion.Euler(0,0,Mathf.MoveTowards(transform.rotation.eulerAngles.z, DesiredRot, SpinSpeed * 90 * Time.deltaTime));
+            if (Mathf.Abs(DesiredRot - transform.rotation.eulerAngles.z) < 0.01f)
+            {
+                ChasingDesiredRot = MoveStyle.None;
+            }
+        }
+        else if (ChasingDesiredRot == MoveStyle.Lerp)
+        {
+            transform.rotation = Quaternion.Euler(0,0,Mathf.LerpAngle(transform.rotation.eulerAngles.z, DesiredRot, SpinSpeed * Time.deltaTime));
+            transform.rotation = Quaternion.Euler(0,0,Mathf.MoveTowards(transform.rotation.eulerAngles.z, DesiredRot, 0.1f));
+            if (Mathf.Abs(DesiredRot - transform.rotation.eulerAngles.z) < 0.01f)
+            {
+                ChasingDesiredRot = MoveStyle.None;
+            }
+        }
+    }
+
+    public void SetDesiredPos(Vector3 where, MoveStyle how)
+    {
+        where.z = transform.position.z;
+        DesiredPos = where;
+        ChasingDesiredPos = how;
+    }
+    
+    public void SetDesiredRot(float rot, MoveStyle how)
+    {
+        DesiredRot = rot;
+        ChasingDesiredRot = how;
+    }
+    
     /// Deals damage to an actor, killing them if they hit 0 health
     public virtual void TakeDamage(float amt, ActorController source=null)
     {
         //If we don't have health, we don't take damage
-        if (MaxHealth <= 0) return;
+        if (MaxHealth <= 0 || IFrames > 0) return;
         //Lower health by amount and die if it hits 0
         Health -= amt;
+        IFrames = 0.5f;
+        if(HurtGnome != null)
+            Instantiate(HurtGnome, transform.position, transform.rotation);
         if(Health <= 0)
             Die(source);
     }
@@ -199,13 +281,12 @@ public class ActorController : MonoBehaviour
     public IEnumerator TrackAnim(string animName)
     {
         CurrentAnim = animName;
-        float timer = 0.1f;
         yield return new WaitForSeconds(0.1f);
         float Duration = 0;
         foreach (AnimationClip c in Anim.runtimeAnimatorController.animationClips)
         {
             if (c.name == animName)
-                Duration = c.length * Anim.speed;
+                Duration = c.length / Anim.speed;
         }
             
         if (Duration > 0)
@@ -219,6 +300,12 @@ public class ActorController : MonoBehaviour
             }
         }
 
+    }
+
+    public virtual ProjectileController FindProjectile(float n)
+    {
+        if (n < ALtProjectiles.Count) return ALtProjectiles[(int)n];
+        return DefaultProjectile;
     }
 
     //A virtual function meant to be overridden. Gets called whenever you have an event
@@ -238,11 +325,11 @@ public class ActorController : MonoBehaviour
         }
         else if (act == "Shoot")
         {
-            Shoot();
+            Shoot(FindProjectile(amt));
         }
         else if (act == "ShootAtPlayer")
         {
-            ShootAtPlayer();
+            ShootAtPlayer(FindProjectile(amt));
         }
         else if (act == "Rotate")
         {
@@ -264,6 +351,131 @@ public class ActorController : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        else if (act == "SetScale")
+        {
+            transform.localScale = new Vector3(amt, amt, 1);
+        }
+        else if (act == "SetAnimSpeed")
+        {
+            if (Anim != null) Anim.speed = amt;
+        }
+        else if (act == "SetX")
+        {
+            Vector3 pos = transform.position;
+            pos.x = amt;
+            transform.position = pos;
+        }
+        else if (act == "SetY")
+        {
+            Vector3 pos = transform.position;
+            pos.y = amt;
+            transform.position = pos;
+        }
+        else if (act == "MoveToX")
+        {
+            Vector3 pos = transform.position;
+            if (ChasingDesiredPos != MoveStyle.None) pos = DesiredPos;
+            pos.x = amt;
+            SetDesiredPos(pos,MoveStyle.Linear);
+        }
+        else if (act == "MoveToY")
+        {
+            Vector3 pos = transform.position;
+            if (ChasingDesiredPos != MoveStyle.None) pos = DesiredPos;
+            pos.y = amt;
+            SetDesiredPos(pos,MoveStyle.Linear);
+        }
+        else if (act == "LerpToX")
+        {
+            Vector3 pos = transform.position;
+            if (ChasingDesiredPos != MoveStyle.None) pos = DesiredPos;
+            pos.x = amt;
+            SetDesiredPos(pos,MoveStyle.Lerp);
+        }
+        else if (act == "LerpToY")
+        {
+            Vector3 pos = transform.position;
+            if (ChasingDesiredPos != MoveStyle.None) pos = DesiredPos;
+            pos.y = amt;
+            SetDesiredPos(pos,MoveStyle.Lerp);
+        }
+        else if (act == "MoveToRotation")
+        {
+            SetDesiredRot(amt,MoveStyle.Linear);
+        }
+        else if (act == "LerpToRotation")
+        {
+            SetDesiredRot(amt,MoveStyle.Lerp);
+        }
+        else if (act == "SetSpeed")
+        {
+            Speed = amt;
+        }
+        else if (act == "SetSpinSpeed")
+        {
+            SpinSpeed = amt;
+        }
+        else if (act == "RandomWalkNew")
+        {
+            Vector3 endPos = new Vector3(Random.Range(-5.5f,5.5f),Random.Range(-2.5f,2.5f));
+            SetDesiredPos(endPos,MoveStyle.Lerp);
+        }
+        else if (act == "MoveToPlayer")
+        {
+            Vector3 pos = PlayerController.Player.transform.position;
+            SetDesiredPos(pos,MoveStyle.Linear);
+        }
+        else if (act == "LerpToPlayer")
+        {
+            Vector3 pos = PlayerController.Player.transform.position;
+            SetDesiredPos(pos,MoveStyle.Lerp);
+        }
+        else if (act == "FadeOut")
+        {
+            Color c = Body.color;
+            c.a = 0;
+            StartCoroutine(GameMaster.Fade(Body, c, amt > 0 ? amt : 0.5f));
+        }
+        else if (act == "FadeIn")
+        {
+            StartCoroutine(GameMaster.Fade(Body,FadeColor,amt > 0 ? amt : 0.5f));
+        }
+        else if (act == "HitboxOn")
+        {
+            if (Coll != null) Coll.enabled = true;
+        }
+        else if (act == "HitboxOff")
+        {
+            if (Coll != null) Coll.enabled = false;
+        }
+        else if (act == "VelX")
+        {
+            if (RB != null)
+            {
+                Vector2 vel = RB.velocity;
+                vel.x = amt;
+                RB.velocity = vel;
+            }
+        }
+        else if (act == "VelY")
+        {
+            if (RB != null)
+            {
+                Vector2 vel = RB.velocity;
+                vel.y = amt;
+                RB.velocity = vel;
+            }
+        }
+        else if (act == "VelPlayer")
+        {
+            if (RB != null)
+            {
+                Vector2 vel = PlayerController.Player.transform.position-transform.position;
+                vel = vel.normalized * (amt > 0 ? amt : Speed);
+                RB.velocity = vel;
+            }
+        }
+        
     }
 
     //Makes the actor flash red
@@ -292,6 +504,13 @@ public class ActorController : MonoBehaviour
     {
         float time = amt > 0 ? amt : 0.5f;
         Vector3 startPos = Body.transform.localPosition;
+        HazardController h = (this is HazardController) ? (HazardController)this : null;
+        bool wh = false;
+        if (h != null && h.WallHit == WallHitBehavior.Shake)
+        {
+            h.WallHit = WallHitBehavior.None;
+            wh = true;
+        }
         while (time > 0)
         {
             time -= Time.deltaTime;
@@ -299,6 +518,18 @@ public class ActorController : MonoBehaviour
                 new Vector3(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f));
             yield return null;
         }
+
+        if (wh)
+        {
+            h.WallHit = WallHitBehavior.Shake;
+        }
         Body.transform.localPosition = startPos;
     }
+}
+
+public enum MoveStyle
+{
+    None=0,
+    Linear=1,
+    Lerp=2
 }
