@@ -47,7 +47,7 @@ public static class GameMaster
         List<T> r = new List<T>();
         while (temp.Count > 0)
         {
-            T chosen = GameMaster.Random(temp);
+            T chosen = temp.Random();
             temp.Remove(chosen);
             r.Add(chosen);
         }
@@ -108,9 +108,8 @@ public static class GameMaster
             return -r;
         return r;
     }
-    
-    ///A coroutine that fades a sprite renderer out or in.
-    public static IEnumerator Fade(SpriteRenderer sr, bool fadeOut = true, float time=0.5f)
+
+    public static IEnumerator Fade(SpriteRenderer sr, bool fadeOut = true, float time = 0.5f, bool turnOff = true)
     {
         sr.gameObject.SetActive(true);
         float start = fadeOut ? 0 : 1;
@@ -124,8 +123,24 @@ public static class GameMaster
             t += Time.deltaTime / time;
         }
         sr.color = new Color(0,0,0,end);
-        if(!fadeOut)
+        if(!fadeOut && turnOff)
             sr.gameObject.SetActive(false);
+    }
+    
+    ///A coroutine that fades a sprite renderer out or in.
+    public static IEnumerator Fade(SpriteRenderer sr, Color targColor, float time=0.5f)
+    {
+        sr.gameObject.SetActive(true);
+        Color start = sr.color;
+        float t = 0;
+        while (t < 1)
+        {
+            float tt = GameMaster.Ease (t, Eases.Out);
+            sr.color = Color.Lerp(start,targColor,tt);
+            yield return null;
+            t += Time.deltaTime / time;
+        }
+        sr.color = targColor;
     }
 }
 
