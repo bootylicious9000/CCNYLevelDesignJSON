@@ -3,23 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
+//This script handles the game's backend
+//You really shouldn't mess with it
+//Just make sure to set MainNPC and JSON in the editor
 public class GameManager : MonoBehaviour
 {
+    [Header("Set To Your Main NPC")]
     public ActorController MainNPC;
+    [Header("Add Disabled-At-Start NPCs Here")]
+    public List<ActorController> SideNPCs;
+    [Header("Drag Your JSON File Here")]
+    public TextAsset JSON;
     public static GameManager Singleton;
+    [Header("Ignore These")]
     public TextMeshPro HealthDisplay;
     public TextMeshPro DialogueDisplay;
     public SpriteRenderer Fader;
-    public TextAsset JSON;
     public AudioSource AS;
     public LevelJSON Script;
     public List<ActorController> Actors;
     public Dictionary<string, List<ActorController>> ActorDict = new Dictionary<string, List<ActorController>>();
     public float Clock;
     public List<EventJSON> Queue = new List<EventJSON>();
-    // private float DialogueCountdown = 0;
     private bool RoundBegun = false;
 
     private void Awake()
@@ -30,6 +36,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         AS.Stop();
+        foreach (ActorController a in SideNPCs)
+            AddActor(a);
         Script = JSONReader.ParseJSON(JSON.text);
         foreach(EventJSON e in Script.Events)
             Queue.Add(e);
@@ -50,12 +58,6 @@ public class GameManager : MonoBehaviour
             }
             return;
         }
-        // if (DialogueCountdown > 0)
-        // {
-        //     DialogueCountdown -= Time.deltaTime;
-        //     if (DialogueCountdown <= 0)
-        //         DialogueDisplay.text = "";
-        // }
         Clock += Time.deltaTime;
         while (Queue.Count > 0 && Queue[0].Time <= Clock)
         {
@@ -76,12 +78,13 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            HealthDisplay.text = "GAME OVER";
+            HealthDisplay.text = "YOU ARE DEAD";
         }
     }
 
     public void AddActor(ActorController a)
     {
+        if (a == null || Actors.Contains(a)) return;
         Actors.Add(a);
         if(!ActorDict.ContainsKey(a.gameObject.name))
             ActorDict.Add(a.gameObject.name,new List<ActorController>());
@@ -110,7 +113,6 @@ public class GameManager : MonoBehaviour
     public void HandleDialogue(string d, float duration=0)
     {
         DialogueDisplay.text = d;
-        // DialogueCountdown = duration > 0 ? duration : 999;
     }
 
     public IEnumerator LevelComplete()
@@ -118,5 +120,10 @@ public class GameManager : MonoBehaviour
         yield return StartCoroutine(GameMaster.Fade(Fader));
         yield return new WaitForSeconds(0.5f);
         GameMaster.NextStage();
+    }
+
+    public static implicit operator GameManager(HabinGameManager v)
+    {
+        throw new NotImplementedException();
     }
 }

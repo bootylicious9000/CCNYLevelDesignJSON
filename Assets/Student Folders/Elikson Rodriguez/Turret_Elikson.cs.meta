@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 90d4ae71d72eb4c4dbb81e51ff72c6c8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - RB: {instanceID: 0}
+  - Body: {instanceID: 0}
+  - Coll: {instanceID: 0}
+  - Anim: {instanceID: 0}
+  - DefaultProjectile: {instanceID: 0}
+  - ShootGnome: {instanceID: 0}
+  - DeathGnome: {instanceID: 0}
+  - ProjectilePrefab: {instanceID: 0}
+  - FastProjectilePrefab: {instanceID: 0}
+  - SlowProjectilePrefab: {instanceID: 0}
+  - SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  - firePoint: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

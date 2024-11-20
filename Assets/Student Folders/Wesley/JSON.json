@@ -1,0 +1,29 @@
+{
+  "Title": "Song Expeirence",
+  "Author": "Beat the music",
+  "Events": [
+    {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 2,"Action": "RandomWalk"},
+    {"Time": 4,"Action": "RandomWalk"},
+    {"Time": 5.5,"Action": "Shake", "Amt": 3},
+    {"Time": 7,"Dialogue": "Well Well"},
+    {"Time": 8,"Dialogue": "came to fight me"},
+    {"Time": 9,"Who":"Player","Action": "Flash"},
+    {"Time": 10,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 11,"Action": "RandomWalk"},
+    {"Time": 13,"Action": "RandomWalk"},
+    {"Time": 14,"Anim": "SpinShoot","Action":  "Shake"},
+    {"Time": 14.5,"Action": "Shake", "Amt": 3},
+    {"Time": 15,"Dialogue": "still standing"},
+    {"Time": 16,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 17,"Anim": "SpinShoot","Action":  "Shake"},
+    {"Time": 18,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 20,"Anim": "SpinShoot","Action": "RandomWalk"},
+    {"Time": 22,"Action": "RandomWalk"},
+    {"Time": 23,"Action": "RandomWalk"},
+    {"Time": 25,"Action": "Shake", "Amt": 2},
+    {"Time": 26,"Dialogue": "Round 2"},
+    {"Time": 26.5,"Dialogue": "Ready, GO"},
+    {"Time": 27}
+  ]
+}
