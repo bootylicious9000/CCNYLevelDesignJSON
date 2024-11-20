@@ -167,7 +167,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873608801308117469, guid: dd60df14096d34c4690b710a850efd50, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873608801308117469, guid: dd60df14096d34c4690b710a850efd50, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7873608801308117469, guid: dd60df14096d34c4690b710a850efd50, type: 3}
       propertyPath: m_LocalPosition.x
@@ -508,6 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 0}
+  Coll: {fileID: 0}
   Anim: {fileID: 0}
   Health: 0
   Speed: 5
@@ -515,8 +520,10 @@ MonoBehaviour:
   DefaultProjectile: {fileID: 0}
   ALtProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1704172624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -618,7 +625,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7873608801308117469, guid: dd60df14096d34c4690b710a850efd50, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873608801308117469, guid: dd60df14096d34c4690b710a850efd50, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7873608801308117469, guid: dd60df14096d34c4690b710a850efd50, type: 3}
       propertyPath: m_LocalPosition.x
