@@ -9,7 +9,7 @@ public class Turret_Elikson : ActorController
     public GameObject SlowProjectilePrefab;
     public GameObject SpikyProjectilePrefab;
     public Transform firePoint;
-    public float Speed = 10f;
+    public new float Speed = 10f;
 
     public override void DoAction(string act, float amt = 0)
     {
