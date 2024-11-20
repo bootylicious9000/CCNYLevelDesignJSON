@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 {
     [Header("Set To Your Main NPC")]
     public ActorController MainNPC;
+    [Header("Add Disabled-At-Start NPCs Here")]
+    public List<ActorController> SideNPCs;
     [Header("Drag Your JSON File Here")]
     public TextAsset JSON;
     public static GameManager Singleton;
@@ -34,6 +36,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         AS.Stop();
+        foreach (ActorController a in SideNPCs)
+            AddActor(a);
         Script = JSONReader.ParseJSON(JSON.text);
         foreach(EventJSON e in Script.Events)
             Queue.Add(e);
@@ -80,6 +84,7 @@ public class GameManager : MonoBehaviour
 
     public void AddActor(ActorController a)
     {
+        if (a == null || Actors.Contains(a)) return;
         Actors.Add(a);
         if(!ActorDict.ContainsKey(a.gameObject.name))
             ActorDict.Add(a.gameObject.name,new List<ActorController>());

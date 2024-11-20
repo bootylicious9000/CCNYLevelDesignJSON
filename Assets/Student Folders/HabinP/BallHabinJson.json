@@ -2,22 +2,7 @@
   "Title": "Jhin Ult Simulator",
   "Author": "Habin Park",
   "Events": [
-    {"Time": 1, "Who": "HabinMonster1", "Anim": "SmallScaleHabin"},
-    {"Time": 1, "Who": "HabinMonster3","Anim": "MediumScaleHabin"},
-    {"Time": 3, "Who": "HabinMonster2","Anim": "SmallScaleHabin"},
-    {"Time": 3, "Who": "HabinMonster4","Anim": "SmallScaleHabin"},
-
-    {"Time": 5, "Who": "HabinMonster1", "Anim": "MediumScaleHabin"},
-    {"Time": 6, "Who": "HabinMonster2","Anim": "MediumScaleHabin"},
-    {"Time": 7, "Who": "HabinMonster3","Anim": "MediumScaleHabin"},
-    {"Time": 8, "Who": "HabinMonster4","Anim": "MediumScaleHabin"},
-
-    {"Time": 9, "Who": "HabinMonster1", "Anim": "LargeScaleHabin"},
-    {"Time": 11, "Who": "HabinMonster2","Anim": "LargeScaleHabin"},
-    {"Time": 13, "Who": "HabinMonster3","Anim": "LargeScaleHabin"},
-    {"Time": 15, "Who": "HabinMonster4","Anim": "LargeScaleHabin"},
-
-
+    {"Time": 1,"Action": "SetScale", "Amt": 5},
 
 
 

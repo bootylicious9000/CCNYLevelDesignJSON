@@ -49,13 +49,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 837640077676156758}
   Body: {fileID: 4263063251411776512}
+  Coll: {fileID: 0}
   Anim: {fileID: 0}
   Health: 3
-  DefaultProjectile: {fileID: 0}
-  ShootGnome: {fileID: 0}
-  DeathGnome: {fileID: 4943575786287307083, guid: 974a946151c198a4093daeb2d8a9d04b, type: 3}
   Speed: 5
-  BulletPrefab: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 0}
+  ALtProjectiles: []
+  ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 4943575786287307083, guid: 974a946151c198a4093daeb2d8a9d04b, type: 3}
+  DeathGnome: {fileID: 4943575786287307083, guid: 974a946151c198a4093daeb2d8a9d04b, type: 3}
 --- !u!50 &837640077676156758
 Rigidbody2D:
   serializedVersion: 4

@@ -32,6 +32,14 @@ public class MikyleMonster : HazardController
         {
             StartCoroutine(FullUpDownColumn(amt));
         }
+        if (act == "RandomTeleport")
+        {
+            StartCoroutine(RandomTeleport());
+        }
+        if (act == "FlashWhite")
+        {
+            StartCoroutine(FlashWhite(amt));
+        }
     }
 
     //Get big and move to each corner of the screen
@@ -237,5 +245,31 @@ public class MikyleMonster : HazardController
             transform.position = Vector3.Lerp(startPos, endPos, timer);
             yield return null;
         }
+    }
+
+    public IEnumerator RandomTeleport()
+    {
+        transform.position = new Vector3(Random.Range(-5.5f,5.5f),Random.Range(-2.5f,2.5f));
+        yield return null;
+    }
+
+    public IEnumerator FlashWhite(float amt)
+    {
+        if (amt <= 0) amt = 0.5f;
+        float bigTime = amt;
+        float smTime = 0.1f;
+        Color c = Body.color;
+        while (bigTime > 0)
+        {
+            bigTime -= Time.deltaTime;
+            smTime -= Time.deltaTime;
+            if (smTime <= 0)
+            {
+                smTime = 0.1f;
+                Body.color = Body.color == c ? Color.white : c;
+            }
+            yield return null;
+        }
+        Body.color = c;
     }
 }

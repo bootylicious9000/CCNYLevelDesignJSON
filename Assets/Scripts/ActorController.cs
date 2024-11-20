@@ -27,6 +27,8 @@ public class ActorController : MonoBehaviour
     public List<ProjectileController> ALtProjectiles;
     //Spawns this gnome (particle and audio emitter) when you shoot 
     public GnomeScript ShootGnome;
+    //Spawns this gnome (particle and audio emitter) when you take damage 
+    public GnomeScript HurtGnome;
     //Spawns this gnome (particle and audio emitter) when you die
     public GnomeScript DeathGnome;
 
@@ -39,6 +41,7 @@ public class ActorController : MonoBehaviour
     protected  MoveStyle ChasingDesiredRot = MoveStyle.None;
 
     protected Color FadeColor;
+    protected float IFrames = 0;
 
     void Awake()
     {
@@ -68,6 +71,10 @@ public class ActorController : MonoBehaviour
 
     void Update()
     {
+        if (IFrames > 0)
+        {
+            IFrames -= Time.deltaTime;
+        }
         OnUpdate();
     }
 
@@ -137,9 +144,12 @@ public class ActorController : MonoBehaviour
     public virtual void TakeDamage(float amt, ActorController source=null)
     {
         //If we don't have health, we don't take damage
-        if (MaxHealth <= 0) return;
+        if (MaxHealth <= 0 || IFrames > 0) return;
         //Lower health by amount and die if it hits 0
         Health -= amt;
+        IFrames = 0.5f;
+        if(HurtGnome != null)
+            Instantiate(HurtGnome, transform.position, transform.rotation);
         if(Health <= 0)
             Die(source);
     }
@@ -438,6 +448,33 @@ public class ActorController : MonoBehaviour
         {
             if (Coll != null) Coll.enabled = false;
         }
+        else if (act == "VelX")
+        {
+            if (RB != null)
+            {
+                Vector2 vel = RB.velocity;
+                vel.x = amt;
+                RB.velocity = vel;
+            }
+        }
+        else if (act == "VelY")
+        {
+            if (RB != null)
+            {
+                Vector2 vel = RB.velocity;
+                vel.y = amt;
+                RB.velocity = vel;
+            }
+        }
+        else if (act == "VelPlayer")
+        {
+            if (RB != null)
+            {
+                Vector2 vel = PlayerController.Player.transform.position-transform.position;
+                vel = vel.normalized * (amt > 0 ? amt : Speed);
+                RB.velocity = vel;
+            }
+        }
         
     }
 
@@ -467,12 +504,24 @@ public class ActorController : MonoBehaviour
     {
         float time = amt > 0 ? amt : 0.5f;
         Vector3 startPos = Body.transform.localPosition;
+        HazardController h = (this is HazardController) ? (HazardController)this : null;
+        bool wh = false;
+        if (h != null && h.WallHit == WallHitBehavior.Shake)
+        {
+            h.WallHit = WallHitBehavior.None;
+            wh = true;
+        }
         while (time > 0)
         {
             time -= Time.deltaTime;
             Body.transform.localPosition = startPos + 
                 new Vector3(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f));
             yield return null;
+        }
+
+        if (wh)
+        {
+            h.WallHit = WallHitBehavior.Shake;
         }
         Body.transform.localPosition = startPos;
     }

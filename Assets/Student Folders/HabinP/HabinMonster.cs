@@ -150,9 +150,15 @@ public class HabinMonster : HazardController
         Vector3 direction = new Vector3(direction2D.x, direction2D.y, 0);
         float rot_z = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Shoot(DefaultProjectile, transform.position, new Vector3 (0,0,rot_z));
-        float projectileSpeed = 5;
         //print to console
         Debug.Log("Single Shot");
+        return null;
+    }
+
+    //set scale of self
+    public IEnumerator SetScale(float amt)
+    {
+        transform.localScale = new Vector3(amt, amt, 1);
         return null;
     }
 }

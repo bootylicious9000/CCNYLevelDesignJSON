@@ -39,7 +39,7 @@ public class ProjectileController_LS : HazardController
 
     public override void HitWall(GameObject obj)
     {
-        base.HitWall(obj);
+        //base.HitWall(obj,other);
         Destroy(gameObject);
     }
 }
