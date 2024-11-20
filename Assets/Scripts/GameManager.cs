@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            HealthDisplay.text = "GAME OVER";
+            HealthDisplay.text = "YOU ARE DEAD";
         }
     }
 
