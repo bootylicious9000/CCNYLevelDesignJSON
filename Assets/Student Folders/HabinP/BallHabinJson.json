@@ -2,9 +2,10 @@
   "Title": "Jhin Ult Simulator",
   "Author": "Habin Park",
   "Events": [
-    {"Time": 1,"Action": "SetScale", "Amt": 5},
-
-
+    {"Time": 1, "Who": "HabinMonster1","Anim": "SmallScaleHabin", "Action": "SetAnimSpeed", "Amt": 2},
+    {"Time": 1, "Who": "HabinMonster3","Anim": "SmallScaleHabin", "Action": "SetAnimSpeed", "Amt": 0.2},
+    {"Time": 1, "Who": "HabinMonster2","Anim": "SmallScaleHabin"},
+    {"Time": 1, "Who": "HabinMonster4","Anim": "SmallScaleHabin"},
 
     {"Time": 300,"Dialogue": "Thats all I have so far..."},
 
