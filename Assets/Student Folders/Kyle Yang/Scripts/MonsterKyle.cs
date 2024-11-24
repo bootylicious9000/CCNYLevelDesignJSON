@@ -271,7 +271,7 @@ public class MonsterKyle : HazardController
         float targetTime = 2;
         targetTime -= Time.deltaTime;
         //I use this to track movement speed
-        float moveSpeed = 5;
+        float moveSpeed = 10;
         //This works a lot like the FourSquare movement blocks, but it's just one
         Vector3 endPos = new Vector3(amt, transform.position.y);
         while (transform.position != endPos)
@@ -291,7 +291,7 @@ public class MonsterKyle : HazardController
         float targetTime = 2;
         targetTime -= Time.deltaTime;
         //I use this to track movement speed
-        float moveSpeed = 5;
+        float moveSpeed = 10;
         //This works a lot like the FourSquare movement blocks, but it's just one
         Vector3 endPos = new Vector3(transform.position.x, amt);
         while (transform.position != endPos)
