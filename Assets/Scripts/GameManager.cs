@@ -78,13 +78,13 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            HealthDisplay.text = "GAME OVER";
+            HealthDisplay.text = "YOU ARE DEAD";
         }
     }
 
     public void AddActor(ActorController a)
     {
-        if (Actors.Contains(a)) return;
+        if (a == null || Actors.Contains(a)) return;
         Actors.Add(a);
         if(!ActorDict.ContainsKey(a.gameObject.name))
             ActorDict.Add(a.gameObject.name,new List<ActorController>());

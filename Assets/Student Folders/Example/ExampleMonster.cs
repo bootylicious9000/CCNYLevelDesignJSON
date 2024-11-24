@@ -16,13 +16,15 @@ public class ExampleMonster : HazardController
         {
             StartCoroutine(RandomWalk());
         }
+        if (act == "FourSquareAlt")
+        {
+            StartCoroutine(FourSquare(Speed));
+        }
     }
 
     //Get big and move to each corner of the screen
-    public IEnumerator FourSquare()
+    public IEnumerator FourSquare(float moveSpeed=5)
     {
-        //I use this to track movement speed
-        float moveSpeed = 5;
         //These variables all get used repeatedly in different contexts
         //They always mean loosely the same thing, and just get wiped clean before second use
         //A simple timer
