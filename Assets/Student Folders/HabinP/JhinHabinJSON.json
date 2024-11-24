@@ -4,6 +4,31 @@
   "Events": [
     {"Time": 1.4,"Action": "SingleShot"},
 
+    {"Time": 2,"Action": "ShootAtPlayer", "Amt" : "SlowBulletProjectile"},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     {"Time": 14,"Action": "SingleShot"},
     {"Time": 14.25,"Action": "SingleShot"},
