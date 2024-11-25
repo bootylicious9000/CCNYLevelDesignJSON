@@ -9,6 +9,8 @@
 
     {"Time": 1,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
 
+    {"Time": 1.7,"Who":"Boss1","Anim": "SpinShoot"},
+
     {"Time": 4.8,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
     
     {"Time": 4.1,"Who":"Boss1", "Action": "SetSpeed", "Amt": 15},
