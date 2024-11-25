@@ -24,7 +24,7 @@ public class ActorController : MonoBehaviour
     //Your default projectile. Leave null if this object doesn't shoot
     public ProjectileController DefaultProjectile;
 
-    public List<ProjectileController> ALtProjectiles;
+    public List<ProjectileController> AltProjectiles;
     //Spawns this gnome (particle and audio emitter) when you shoot 
     public GnomeScript ShootGnome;
     //Spawns this gnome (particle and audio emitter) when you take damage 
@@ -304,7 +304,7 @@ public class ActorController : MonoBehaviour
 
     public virtual ProjectileController FindProjectile(float n)
     {
-        if (n < ALtProjectiles.Count) return ALtProjectiles[(int)n];
+        if (n < AltProjectiles.Count) return AltProjectiles[(int)n];
         return DefaultProjectile;
     }
 
