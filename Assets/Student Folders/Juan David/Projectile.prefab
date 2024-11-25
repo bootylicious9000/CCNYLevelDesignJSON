@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 1270537448121740183}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 0.00377, y: -0.00377, z: 0}
+  m_LocalScale: {x: 0.307536, y: 0.29246402, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5540492209186463458}
@@ -178,14 +178,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 6830306966571732234}
   Body: {fileID: 0}
+  Coll: {fileID: 0}
   Anim: {fileID: 0}
   Health: 0
+  Speed: 10
+  SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
+  ALtProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
-  Speed: 10
+  WallHit: 0
   Source: {fileID: 0}
+  OnlyHitPlayer: 0
 --- !u!50 &6830306966571732234
 Rigidbody2D:
   serializedVersion: 4

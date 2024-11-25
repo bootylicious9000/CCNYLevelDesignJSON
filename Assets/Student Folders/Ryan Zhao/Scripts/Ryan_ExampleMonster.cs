@@ -19,7 +19,7 @@ public class Ryan_ExampleMonster : ExampleMonster
     }
 
     //Get big and move to each corner of the screen
-    public IEnumerator FourSquare()
+    public new IEnumerator FourSquare()
     {
         //I use this to track movement speed
         float moveSpeed = 5;
@@ -118,7 +118,7 @@ public class Ryan_ExampleMonster : ExampleMonster
     
     //Go to a random place on the screen
     //Notice how the action after this one plays out different than normal
-    public IEnumerator RandomWalk()
+    public new IEnumerator RandomWalk()
     {
         //I use this to track movement speed
         float moveSpeed = 5;

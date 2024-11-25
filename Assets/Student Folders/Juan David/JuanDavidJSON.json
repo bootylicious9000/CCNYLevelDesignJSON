@@ -10,5 +10,10 @@
     {"Time": 8,"Who":"Player","Action": "Flash"},
     {"Time": 10,"Dialogue": ""},
     {"Time": 12}
+    {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
+  
+  
   ]
+
+
 }

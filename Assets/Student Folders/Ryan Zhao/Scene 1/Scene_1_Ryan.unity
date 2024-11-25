@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 30210107}
+  Coll: {fileID: 0}
   Anim: {fileID: 30210105}
   Health: 0
   Speed: 5
@@ -333,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 70618674}
   Body: {fileID: 70618676}
+  Coll: {fileID: 0}
   Anim: {fileID: 70618673}
   Health: 0
   Speed: 5
@@ -574,6 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 144661392}
+  Coll: {fileID: 0}
   Anim: {fileID: 144661390}
   Health: 0
   Speed: 5
@@ -765,6 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 144893576}
+  Coll: {fileID: 0}
   Anim: {fileID: 144893574}
   Health: 0
   Speed: 5
@@ -941,6 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 212193368}
+  Coll: {fileID: 0}
   Anim: {fileID: 212193366}
   Health: 0
   Speed: 5
@@ -1103,6 +1108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 399969657}
   Body: {fileID: 399969659}
+  Coll: {fileID: 0}
   Anim: {fileID: 399969656}
   Health: 0
   Speed: 5
@@ -1359,6 +1365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 535619843}
+  Coll: {fileID: 0}
   Anim: {fileID: 535619841}
   Health: 0
   Speed: 5
@@ -1535,6 +1542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 802115361}
+  Coll: {fileID: 0}
   Anim: {fileID: 802115359}
   Health: 0
   Speed: 5
@@ -1847,6 +1855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1098376333}
+  Coll: {fileID: 0}
   Anim: {fileID: 1098376331}
   Health: 0
   Speed: 5
@@ -2023,6 +2032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1170996119}
+  Coll: {fileID: 0}
   Anim: {fileID: 1170996117}
   Health: 0
   Speed: 5
@@ -2199,6 +2209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1204943616}
+  Coll: {fileID: 0}
   Anim: {fileID: 1204943614}
   Health: 0
   Speed: 5
@@ -2375,6 +2386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1249928449}
+  Coll: {fileID: 0}
   Anim: {fileID: 1249928447}
   Health: 0
   Speed: 5
@@ -2536,6 +2548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1411800003}
+  Coll: {fileID: 0}
   Anim: {fileID: 1411800000}
   Health: 0
   Speed: 5
@@ -2727,6 +2740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1413579937}
+  Coll: {fileID: 0}
   Anim: {fileID: 1413579935}
   Health: 0
   Speed: 5
@@ -2903,6 +2917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1434358750}
+  Coll: {fileID: 0}
   Anim: {fileID: 1434358748}
   Health: 0
   Speed: 5
@@ -3079,6 +3094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1452773181}
+  Coll: {fileID: 0}
   Anim: {fileID: 1452773179}
   Health: 0
   Speed: 5
@@ -3255,6 +3271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1490586241}
+  Coll: {fileID: 0}
   Anim: {fileID: 1490586239}
   Health: 0
   Speed: 5
@@ -3416,6 +3433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1507805220}
+  Coll: {fileID: 0}
   Anim: {fileID: 1507805218}
   Health: 0
   Speed: 5
@@ -3607,6 +3625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1534540424}
+  Coll: {fileID: 0}
   Anim: {fileID: 1534540422}
   Health: 0
   Speed: 5
@@ -3783,6 +3802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1572628997}
+  Coll: {fileID: 0}
   Anim: {fileID: 1572628995}
   Health: 0
   Speed: 5
@@ -4029,6 +4049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1720321810}
+  Coll: {fileID: 0}
   Anim: {fileID: 1720321808}
   Health: 0
   Speed: 5
@@ -4191,6 +4212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 1742306567}
   Body: {fileID: 1742306569}
+  Coll: {fileID: 0}
   Anim: {fileID: 1742306566}
   Health: 0
   Speed: 5
@@ -4394,6 +4416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 1785395690}
+  Coll: {fileID: 0}
   Anim: {fileID: 1785395688}
   Health: 0
   Speed: 5
@@ -4571,11 +4594,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 1965605540}
   Body: {fileID: 1965605542}
+  Coll: {fileID: 0}
   Anim: {fileID: 1965605539}
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
+  DefaultProjectile: {fileID: 2390409369395080432, guid: bb60d754354f7724f9934a044678b7f1, type: 3}
   ALtProjectiles: []
   ShootGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -4850,6 +4874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 2070215276}
+  Coll: {fileID: 0}
   Anim: {fileID: 2070215274}
   Health: 0
   Speed: 5
@@ -5026,6 +5051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 0}
   Body: {fileID: 2089066707}
+  Coll: {fileID: 0}
   Anim: {fileID: 2089066705}
   Health: 0
   Speed: 5
