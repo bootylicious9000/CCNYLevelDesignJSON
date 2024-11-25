@@ -6,7 +6,7 @@
     {
       "Time": 0,
       "Anim": "SpinShoot",
-      "Action": "RandomWalk",
+      "Action": "",
       "Amt": null,
       "Dialogue": "",
       "Who": ""
@@ -14,7 +14,7 @@
     {
       "Time": 1,
       "Anim": "SpinShoot",
-      "Action": "RandomWalk",
+      "Action": "",
       "Amt": null,
       "Dialogue": "",
       "Who": ""
@@ -22,7 +22,7 @@
     {
       "Time": 2,
       "Anim": "SpinShoot",
-      "Action": "RandomWalk",
+      "Action": "",
       "Amt": null,
       "Dialogue": "",
       "Who": ""
@@ -38,7 +38,7 @@
     {
       "Time": 4,
       "Anim": "SpinShoot",
-      "Action": "RandomWalk",
+      "Action": "",
       "Amt": null,
       "Dialogue": "",
       "Who": ""
@@ -86,7 +86,7 @@
     {
       "Time": 10,
       "Anim": "SpinShoot",
-      "Action": "RandomWalk",
+      "Action": "",
       "Amt": null,
       "Dialogue": "",
       "Who": ""
