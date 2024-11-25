@@ -1,6 +1,6 @@
 {
-  "Title": "Example Level",
-  "Author": "Example Student",
+  "Title": "Welcome To The Bronx",
+  "Author": "MichaelT",
   "Events": [
     {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
     {"Time": 2,"Action": "RandomWalk"},
