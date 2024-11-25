@@ -2,9 +2,8 @@
   "Title": "Song Expeirence",
   "Author": "Beat the music",
   "Events": [
-    {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
-    {"Time": 1,"Action": "MoveUp", "Amt": 2},
-
+      
+    {"Time": -1,"Who": "HP", "Action":"TurnOff"},
     {"Time": -1,"Who": "Square (5)",  "Action":"TurnOff"},
     {"Time": -1,"Who": "Square (4)",  "Action":"TurnOff"},
     {"Time": -1,"Who": "Square (3)",  "Action":"TurnOff"},
@@ -17,13 +16,24 @@
     {"Time": 0,"Who": "bigBill (1)",  "Action":"TurnOff"},
     {"Time": 0,"Who": "bigBill",  "Action":"TurnOff"},
    
+
     {"Time": -2,"Who": "Bone 1",  "Action":"TurnOff"},
     {"Time": -2,"Who": "Bone 2",  "Action":"TurnOff"},
     {"Time": -2,"Who": "Bone 3",  "Action":"TurnOff"},
     {"Time": -2,"Who": "Bone 4",  "Action":"TurnOff"},
-   
-   
-   
+
+    {"Time": -1,"Who": "Unde",  "Action":"TurnOff"},
+
+
+
+    {"Time": -1,"Who": "HP", "Action":"TurnOn"},
+
+
+    {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
+
+
+    {"Time": 1,"Action": "MoveUp", "Amt": 2},
+
     {"Time": 1.2,"Action": "MoveDown", "Amt": -6},
     {"Time": 1.3,"Action": "MoveRight", "Amt": 2},
 
@@ -105,6 +115,12 @@
 
     {"Time": 16.9,"Action": "MoveRight", "Amt":-4},
     {"Time": 16.9,"Action": "MoveDown", "Amt": 2},
+    {"Time": 16.8,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
+    {"Time": 16.8,"Action": "ShootAtPlayer"},
+    {"Time": 16.9,"Action": "MoveRight", "Amt":2, "Anim": "SpinShoot"},
+    {"Time": 16.9,"Action": "ShootAtPlayer"},
+    {"Time": 16.9,"Action": "MoveUp", "Amt": -2, "Anim": "SpinShoot"},
+    {"Time": 16.8,"Action": "ShootAtPlayer"},
     {"Time": 16.9,"Action": "ShootAtPlayer"},
 
 
@@ -142,6 +158,14 @@
 
     {"Time": 19.9,"Action": "MoveRight", "Amt":-4},
     {"Time": 19.9,"Action": "MoveDown", "Amt": 2},
+
+    {"Time": 20.4,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
+    {"Time": 20.4,"Action": "ShootAtPlayer"},
+    {"Time": 20.4,"Action": "MoveRight", "Amt":2, "Anim": "SpinShoot"},
+    {"Time": 20.7,"Action": "ShootAtPlayer"},
+    {"Time": 20.7,"Action": "MoveUp", "Amt": -2, "Anim": "SpinShoot"},
+    {"Time": 20.8,"Action": "ShootAtPlayer"},
+
     {"Time": 19.9,"Action": "ShootAtPlayer"},
 
     {"Time": 20.5,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
@@ -197,8 +221,15 @@
     {"Time": 23.8,"Action": "MoveUp", "Amt": 5, "Anim": "SpinShoot"},
     {"Time": 23.9,"Action": "ShootAtPlayer"},
 
+    {"Time": 24.1,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
+    {"Time": 24.1,"Action": "ShootAtPlayer"},
+    {"Time": 24.1,"Action": "MoveRight", "Amt":2, "Anim": "SpinShoot"},
+    {"Time": 24.2,"Action": "ShootAtPlayer"},
+    {"Time": 24.2,"Action": "MoveUp", "Amt": -2, "Anim": "SpinShoot"},
+    {"Time": 24.2,"Action": "ShootAtPlayer"},
+
     {"Time": 24,"Action": "MoveRight", "Amt": 4, "Anim": "SpinShoot"},
-    {"Time": 24.3,"Action": "MoveDown", "Amt":-8, "Anim": "SpinShoot"},
+    {"Time": 24.3,"Action": "MoveDown", "Amt":8, "Anim": "SpinShoot"},
     {"Time": 24.5,"Action": "MoveUp", "Amt": 2, "Anim": "SpinShoot"},
     {"Time": 24.7,"Action": "ShootAtPlayer"},
 
@@ -210,9 +241,9 @@
     {"Time": 26.5,"Who": "Square",  "Action":"TurnOff"},
 
 
-    {"Time": 25,"Action": "Shake", "Amt": 2},
-    {"Time": 26,"Dialogue": "Round 2"},
-    {"Time": 26.5,"Dialogue": "Ready, GO"},
+    {"Time": 24,"Action": "Shake", "Amt": 2},
+    {"Time": 25,"Dialogue": "Round 2"},
+    {"Time": 26,"Dialogue": "Ready, GO"},
 
     {"Time": 26.9,"Who": "bigBill (3)",  "Action":"TurnOn"},
     {"Time": 26.9,"Who": "bigBill (2)",  "Action":"TurnOn"},
@@ -257,10 +288,10 @@
     {"Time": 29,"Action": "ShootAtPlayer"},
     {"Time": 29.1,"Action": "ShootAtPlayer"},
 
-    {"Time": 29.5,"Action": "MoveDown", "Amt": -4},
+    {"Time": 29.5,"Action": "MoveDown", "Amt": 4},
     {"Time": 29.6,"Action": "MoveLeft", "Amt": 4},
     {"Time": 29.7,"Action": "MoveUP", "Amt": 6},
-    {"Time": 29.8,"Action": "MoveRight", "Amt": -2},
+    {"Time": 29.8,"Action": "MoveRight", "Amt": 2},
 
     {"Time": 30,"Anim": "SpinShoot","Action": "RandomWalk"},
     {"Time": 30.3,"Action": "ShootAtPlayer"},
@@ -281,6 +312,14 @@
     {"Time": 31.6,"Action": "MoveDown", "Amt": -10, "Anim": "SpinShoot"},
     {"Time": 31.6,"Action": "MoveRight", "Amt":2, "Anim": "SpinShoot"},
     {"Time": 31.6,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
+
+    {"Time": 31.5,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
+    {"Time": 31.5,"Action": "ShootAtPlayer"},
+    {"Time": 31.7,"Action": "MoveRight", "Amt":2, "Anim": "SpinShoot"},
+    {"Time": 31.8,"Action": "ShootAtPlayer"},
+    {"Time": 31.8,"Action": "MoveUp", "Amt": -2, "Anim": "SpinShoot"},
+    {"Time": 31.8,"Action": "ShootAtPlayer"},
+
     {"Time": 31.6,"Action": "MoveLeft", "Amt":2, "Anim": "SpinShoot"},
     {"Time": 31.8,"Action": "MoveUp", "Amt": -2, "Anim": "SpinShoot"},
     {"Time": 32,"Action": "ShootAtPlayer"},
@@ -310,6 +349,14 @@
     {"Time": 34.1,"Action": "ShootAtPlayer"},
     {"Time": 34.2,"Action": "ShootAtPlayer"},
     {"Time": 34.3,"Action": "ShootAtPlayer"},
+
+    {"Time": 34.4,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
+    {"Time": 34.4,"Action": "ShootAtPlayer"},
+    {"Time": 34.4,"Action": "MoveRight", "Amt":2, "Anim": "SpinShoot"},
+    {"Time": 34.4,"Action": "ShootAtPlayer"},
+    {"Time": 34.4,"Action": "MoveUp", "Amt": -2, "Anim": "SpinShoot"},
+    {"Time": 34.4,"Action": "ShootAtPlayer"},
+
     {"Time": 34.5,"Action": "ShootAtPlayer"},
     {"Time": 34.7,"Action": "ShootAtPlayer"},
     {"Time": 34.9,"Action": "ShootAtPlayer"},
@@ -318,6 +365,14 @@
     {"Time": 35.1,"Action": "ShootAtPlayer"},
     {"Time": 35.2,"Action": "ShootAtPlayer"},
     {"Time": 35.3,"Action": "ShootAtPlayer"},
+
+    {"Time": 35.3,"Action": "MoveUp", "Amt": 4, "Anim": "SpinShoot"},
+    {"Time": 35.3,"Action": "ShootAtPlayer"},
+    {"Time": 35.3,"Action": "MoveRight", "Amt":2, "Anim": "SpinShoot"},
+    {"Time": 35.7,"Action": "ShootAtPlayer"},
+    {"Time": 35.7,"Action": "MoveUp", "Amt": -2, "Anim": "SpinShoot"},
+    {"Time": 35.7,"Action": "ShootAtPlayer"},
+    
     {"Time": 35.4,"Action": "ShootAtPlayer"},
     {"Time": 35.5,"Action": "ShootAtPlayer"},
     {"Time": 35.6,"Action": "ShootAtPlayer"},
@@ -342,7 +397,7 @@
     {"Time": 37.7,"Action": "ShootAtPlayer"},
     {"Time": 37.8,"Action": "ShootAtPlayer"},
 
-    {"Time": 38.,"Who": "bigBill (3)",  "Action":"TurnOff"},
+    {"Time": 38,"Who": "bigBill (3)",  "Action":"TurnOff"},
     {"Time": 38,"Who": "bigBill (2)",  "Action":"TurnOff"},
     {"Time": 38,"Who": "bigBill (1)",  "Action":"TurnOff"},
     {"Time": 38,"Who": "bigBill",  "Action":"TurnOff"},
@@ -379,15 +434,15 @@
     {"Time": 41.2,"Action": "MoveLeft", "Amt": -4},
 
     {"Time": 41.5,"Action": "ShootAtPlayer"},
-    {"Time": 41.6,"Action": "ShootAtPlayer"},
+    {"Time": 41.6,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 41.7,"Anim": "SpinShoot"},
     {"Time": 41.8,"Action": "ShootAtPlayer"},
-    {"Time": 41.9,"Action": "ShootAtPlayer"},
+    {"Time": 41.9,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
 
     {"Time": 42,"Anim": "SpinShoot"},
     {"Time": 42,"Action": "ShootAtPlayer"},
-    {"Time": 42.1,"Action": "ShootAtPlayer"},
-    {"Time": 42.2,"Action": "ShootAtPlayer"},
+    {"Time": 42.1,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
+    {"Time": 42.2,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
 
     {"Time": 42.2,"Action": "ShootAtPlayer"},
 
@@ -445,9 +500,11 @@
     {"Time": 50.5,"Who": "Bone 4",  "Action":"TurnOff"},
 
     {"Time": 50.7,"Action": "RandomWalk"},
-    {"Time": 50.9,"Action": "ShootAtPlayer"},
+    {"Time": 50.8,"Action": "ShootAtPlayer"},
+    {"Time": 50.9,"Action": "RandomWalk"},
     {"Time": 51,"Action": "ShootAtPlayer"},
     {"Time": 52,"Action": "ShootAtPlayer"},
+    {"Time": 52.3,"Action": "RandomWalk"},
     {"Time": 52.5,"Action": "RandomWalk"},
 
     {"Time": 53,"Who": "Bone 2",  "Action":"TurnOn"},
@@ -460,51 +517,164 @@
     {"Time": 54.1,"Action": "RandomWalk"},
     {"Time": 54.2,"Action": "ShootAtPlayer"},
 
-    {"Time": 54.5,"Who": "Bone 2",  "Action":"TurnOff"},
-    {"Time": 54.5,"Who": "Bone 3",  "Action":"TurnOff"},
+    {"Time": 54.5,"Who": "Bone 2", "Action":"TurnOff"},
+    {"Time": 54.5,"Who": "Bone 3", "Action":"TurnOff"},
 
     {"Time": 54.9,"Action": "ShootAtPlayer"},
 
-    {"Time": 55,"Who": "Bone 1",  "Action":"TurnOn"},
-    {"Time": 55,"Who": "Bone 2",  "Action":"TurnOn"},
-    {"Time": 55,"Who": "Bone 4",  "Action":"TurnOn"},
-    {"Time": 55,"Who": "Bone 3",  "Action":"TurnOn"},
+    {"Time": 55,"Who": "Bone 1", "Action":"TurnOn"},
+    {"Time": 55,"Who": "Bone 2", "Action":"TurnOn"},
+    {"Time": 55,"Who": "Bone 4", "Action":"TurnOn"},
+    {"Time": 55,"Who": "Bone 3", "Action":"TurnOn"},
 
     {"Time": 55.1,"Action": "ShootAtPlayer"},
-    {"Time": 55.2,"Action": "ShootAtPlayer"},
+    {"Time": 55.2,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 55.3,"Action": "ShootAtPlayer"},
-    {"Time": 55.4,"Action": "ShootAtPlayer"},
+    {"Time": 55.4,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 55.5,"Action": "ShootAtPlayer"},
-    {"Time": 55.7,"Action": "ShootAtPlayer"},
+    {"Time": 55.7,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
+    {"Time": 55.8,"Action": "RandomWalk"},
     {"Time": 55.9,"Action": "ShootAtPlayer"},
     {"Time": 56,"Action": "ShootAtPlayer"},
 
     {"Time": 56.1,"Action": "ShootAtPlayer"},
     {"Time": 56.2,"Action": "ShootAtPlayer"},
-    {"Time": 56.3,"Action": "ShootAtPlayer"},
-    {"Time": 56.4,"Action": "ShootAtPlayer"},
+    {"Time": 56.3,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
+    {"Time": 56.4,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 56.5,"Action": "ShootAtPlayer"},
-    {"Time": 56.6,"Action": "ShootAtPlayer"},
+    {"Time": 56.6,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 56.7,"Action": "ShootAtPlayer"},
     {"Time": 56.8,"Action": "ShootAtPlayer"},
 
-    {"Time": 56.9,"Action": "ShootAtPlayer"},
-    {"Time": 57.1,"Action": "ShootAtPlayer"},
+    {"Time": 56.9,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
+    {"Time": 57.1,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 57.2,"Action": "ShootAtPlayer"},
     {"Time": 57.3,"Action": "ShootAtPlayer"},
-    {"Time": 57.5,"Action": "ShootAtPlayer"},
+    {"Time": 57.4,"Action": "RandomWalk"},
+    {"Time": 57.5,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 57.7,"Action": "ShootAtPlayer"},
+    {"Time": 58.8,"Action": "RandomWalk"},
     {"Time": 57.9,"Action": "ShootAtPlayer"},
     {"Time": 58,"Action": "ShootAtPlayer"},
 
     {"Time": 58.1,"Action": "ShootAtPlayer"},
     {"Time": 58.2,"Action": "ShootAtPlayer"},
     {"Time": 58.3,"Action": "ShootAtPlayer"},
-    {"Time": 58.4,"Action": "ShootAtPlayer"},
-    {"Time": 58.5,"Action": "ShootAtPlayer"},
+    {"Time": 58.4,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
+    {"Time": 58.5,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 58.6,"Action": "ShootAtPlayer"},
-    {"Time": 58.7,"Action": "ShootAtPlayer"},
+    {"Time": 58.7,"Action": "ShootAtPlayer","Anim": "SpinShoot"},
     {"Time": 58.8,"Action": "ShootAtPlayer"},
+
+    {"Time": 59,"Who": "Bone 1", "Action":"TurnOff"},
+    {"Time": 59,"Who": "Bone 2", "Action":"TurnOff"},
+    {"Time": 59,"Who": "Bone 4", "Action":"TurnOff"},
+    {"Time": 59,"Who": "Bone 3", "Action":"TurnOff"},
+
+    {"Time": 59.7,"Action": "MoveRight", "Amt": 2},
+    {"Time": 59.8,"Action": "MoveRight", "Amt": 2},
+    {"Time": 59.9,"Action": "MoveRight", "Amt": 2},
+    
+    {"Time": 60.1,"Action": "Moveup", "Amt": 2},
+    {"Time": 60.2,"Action": "MoveUp", "Amt": 2},
+    {"Time": 60.3,"Action": "MoveUp", "Amt": 2},
+    {"Time": 60.4,"Action": "MoveUp", "Amt": 2},
+
+    {"Time": 61, "Dialogue":" Im tapped out fight this guy"},
+   
+    {"Time": 61.1,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.2,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.3,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.4,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.5,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.6,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.7,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.8,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 61.9,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+
+    {"Time": 62, "Dialogue":" I know its random"},
+    {"Time": 62.5, "Dialogue":" I Mean"},
+    {"Time": 62.9, "Dialogue":" Woof Bark"},
+    {"Time": 63, "Dialogue":" Ill go but take this hp, Woof"},
+
+    {"Time": 63.2,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 63.3,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 63.4,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 63.5,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 63.6,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 63.7,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 63.8,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 63.9,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.1,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.2,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.3,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.4,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.5,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.6,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.7,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.8,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 64.9,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    
+    {"Time": 65,"Who": "HP", "Action":"TurnOn"},
+    
+    {"Time": 65,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 65.1,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 65.2,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 65.3,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 65.4,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 65.8,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 65.9,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 66,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 66.1,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    {"Time": 66.1,"Who": "Doggie", "Action": "MoveRight", "Amt":1},
+    
+    {"Time": 69,"Who": "HP", "Action":"TurnOff"},
+
+    {"Time": 67, "Dialogue":" Why he give you that??"},
+    {"Time": 68, "Dialogue":"Nevermind, here meet Unde"},
+
+    {"Time": 68.5,"Who": "Unde",  "Action":"TurnOn"},
+
+    {"Time": 69.3,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 69.5,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 69.6,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 69.8,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 69.9,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 70,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+
+    {"Time": 70.3,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 70.5,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 70.6,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 70.8,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 70.9,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 71,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+
+    {"Time": 72.2,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+    {"Time": 72.3,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+    {"Time": 72.4,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+    {"Time": 72.5,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+    {"Time": 72.6,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+    {"Time": 72.7,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+    {"Time": 72.8,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+    {"Time": 72.9,"Who": "Unde",  "Action": "MoveRight", "Amt":1},
+
+    {"Time": 73,"Who": "Unde",  "Action": "MoveRight", "Amt":3},
+    {"Time": 73.2,"Who": "Unde",  "Action": "MoveRight", "Amt":2},
+
+    {"Time": 73.5,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 73.5,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 73.6,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 73.8,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 73.9,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 74,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+
+    {"Time": 74.3,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 74.5,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 74.6,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 74.8,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 74.9,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
+    {"Time": 75,"Who": "Unde",  "Action": "ShootAtPlayer"}, 
 
     {"Time": 279}
   ]
