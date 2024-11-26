@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3541093684125484274, guid: 012916fa5a6900943bf0049242bb5db3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1558863088311700548, guid: 012916fa5a6900943bf0049242bb5db3, type: 3}
       propertyPath: m_Name
       value: Monster Michael R
