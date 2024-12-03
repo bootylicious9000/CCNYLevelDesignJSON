@@ -3,31 +3,60 @@
   "Title": "Who's Toxic ? It's You!",
   "Author": "Moona Hoshinova",
   "Events": [
-
-    {"Time": 0.7,"Who":"Boss1","Action": "MoveRight", "Amt": 10},
-    {"Time": 0.7,"Who":"Boss2","Action": "MoveRight", "Amt": 21},
-
     {"Time": 1,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
+    {"Time": 1,"Who":"RightTurret1","Action": "ShootAtPlayer"},
+    {"Time": 1.5,"Who":"LeftTurret2","Action": "ShootAtPlayer"},
+    {"Time": 1.5,"Who":"RightTurret2","Action": "ShootAtPlayer"},
+    {"Time": 2,"Who":"LeftTurret3","Action": "ShootAtPlayer"},
+    {"Time": 2,"Who":"RightTurret3","Action": "ShootAtPlayer"},
+    {"Time": 2.5,"Who":"LeftTurret4","Action": "ShootAtPlayer"},
+    {"Time": 2.5,"Who":"RightTurret4","Action": "ShootAtPlayer"},
+
+    {"Time": 3,"Who":"Boss1","Action": "MoveRight", "Amt": 10},
+    {"Time": 3,"Who":"Boss2","Action": "MoveRight", "Amt": 21},
 
     {"Time": 4.1,"Who":"Boss1", "Action": "Shake"},
     {"Time": 4.1,"Who":"Boss2", "Action": "Shake"},
     {"Time": 4.7,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
     {"Time": 4.7,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
 
-    {"Time": 4.8,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
+    {"Time": 6.5,"Who":"UpTurret7","Action": "ShootAtPlayer"},
 
     {"Time": 6.6,"Who":"Boss1", "Action": "MoveToX", "Amt": -6},
     {"Time": 6.6,"Who":"Boss1", "Action": "MoveToY", "Amt": 3},
     {"Time": 6.6,"Who":"Boss2", "Action": "MoveToX", "Amt": 6},
     {"Time": 6.6,"Who":"Boss2", "Action": "MoveToY", "Amt": 3},
 
+
+    {"Time": 7,"Who":"UpTurret6","Action": "ShootAtPlayer"},
+    {"Time": 7.5,"Who":"UpTurret5","Action": "ShootAtPlayer"},
+    {"Time": 8,"Who":"UpTurret4","Action": "ShootAtPlayer"},
+    {"Time": 8.5,"Who":"UpTurret3","Action": "ShootAtPlayer"},
+    {"Time": 9,"Who":"UpTurret2","Action": "ShootAtPlayer"},
+    {"Time": 9.5,"Who":"UpTurret1","Action": "ShootAtPlayer"},
+
     {"Time": 10,"Who":"Boss1", "Action": "MoveToY", "Amt": -3},
     {"Time": 10,"Who":"Boss2", "Action": "MoveToY", "Amt": -3},
+
+    {"Time": 10,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
+    {"Time": 10.5,"Who":"LeftTurret2","Action": "ShootAtPlayer"},
+    {"Time": 11,"Who":"LeftTurret3","Action": "ShootAtPlayer"},
+    {"Time": 11.5,"Who":"LeftTurret4","Action": "ShootAtPlayer"},
+    {"Time": 12,"Who":"DownTurret1","Action": "ShootAtPlayer"},
+    {"Time": 12.5,"Who":"DownTurret2","Action": "ShootAtPlayer"},
 
     {"Time": 12.5,"Who":"Boss1", "Action": "MoveToX", "Amt": 6},
     {"Time": 12.5,"Who":"Boss1", "Action": "MoveToY", "Amt": 3},
     {"Time": 12.5,"Who":"Boss2", "Action": "MoveToX", "Amt": -6},
     {"Time": 12.5,"Who":"Boss2", "Action": "MoveToY", "Amt": 3},
+
+    {"Time": 13,"Who":"DownTurret3","Action": "ShootAtPlayer"},
+    {"Time": 13.5,"Who":"DownTurret4","Action": "ShootAtPlayer"},
+    {"Time": 14,"Who":"DownTurret5","Action": "ShootAtPlayer"},
+    {"Time": 14.5,"Who":"DownTurret6","Action": "ShootAtPlayer"},
+    {"Time": 15,"Who":"DownTurret7","Action": "ShootAtPlayer"},
+    {"Time": 15.5,"Who":"RightTurret4","Action": "ShootAtPlayer"},
+    {"Time": 16,"Who":"RightTurret3","Action": "ShootAtPlayer"},
 
     {"Time": 16.2,"Who":"Boss1", "Action": "Shake"},
     {"Time": 16.2,"Who":"Boss2", "Action": "Shake"},
