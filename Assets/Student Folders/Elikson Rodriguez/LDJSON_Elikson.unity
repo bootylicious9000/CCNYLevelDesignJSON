@@ -13345,7 +13345,7 @@ MonoBehaviour:
   Body: {fileID: 4263063251229309362}
   Coll: {fileID: 0}
   Anim: {fileID: 0}
-  Health: 60
+  Health: 10
   Speed: 6
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
@@ -14264,7 +14264,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7a248e5c6592f0946a143e21e39f4f5d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d735e86a9c330bd4b9ccfabb0375948b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1
