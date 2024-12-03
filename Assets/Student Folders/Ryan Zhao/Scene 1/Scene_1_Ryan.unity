@@ -177,7 +177,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -379,7 +379,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -573,7 +573,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -752,7 +752,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -917,7 +917,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -1150,7 +1150,7 @@ Transform:
   m_GameObject: {fileID: 535619838}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4362588, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 2.4362588, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1176,7 +1176,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -2026,7 +2026,7 @@ Transform:
   m_GameObject: {fileID: 1204943611}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4362588, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 0.4362588, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2052,7 +2052,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -2231,7 +2231,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -2395,7 +2395,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -2563,7 +2563,7 @@ Transform:
   m_GameObject: {fileID: 1413579932}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.436259, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 8.436258, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2589,7 +2589,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -2768,7 +2768,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -2947,7 +2947,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -3126,7 +3126,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -3290,7 +3290,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -3484,7 +3484,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -3637,7 +3637,7 @@ Transform:
   m_GameObject: {fileID: 1572628992}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.436258, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 4.436259, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3663,7 +3663,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -3912,7 +3912,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -4076,7 +4076,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -4256,7 +4256,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -4538,7 +4538,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
@@ -4717,7 +4717,7 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}

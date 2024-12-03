@@ -9,7 +9,7 @@
     {"Time": 3,"Dialogue": "3"},
     {"Time": 4,"Dialogue": "2"},
     {"Time": 5,"Dialogue": "1"},
-    {"Time": 6,"Dialogue": "Start"},
+    {"Time": 6,"Dialogue": ""},
 
     {"NAME": "1 beat break"},
     {"Time": 5,"Who": "Monster1", "Action": "Right", "Amt": -6},
