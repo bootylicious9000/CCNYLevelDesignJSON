@@ -3,133 +3,21 @@
   "Author": "MichaelT",
   "Events": 
     [
-      {
-        "Time": 0,
-        "Anim": "SpinShoot",
-        "Action": "RandomWalk",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 2,
-        "Anim": "",
-        "Action": "RandomWalk",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 4,
-        "Anim": "",
-        "Action": "RandomWalk",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 5.5,
-        "Anim": "",
-        "Action": "Shake",
-        "Amt": 3,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 8,
-        "Anim": "",
-        "Action": "Flash",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 8,
-        "Anim": "",
-        "Action": "ShootAtPlayer",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": "Player"
-      },
-      {
-        "Time": 10,
-        "Anim": "",
-        "Action": "MoveRight",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 12,
-        "Anim": "SpinShoot",
-        "Action": "Rotate",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 13,
-        "Anim": "",
-        "Action": "MoveToPlayer",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 14,
-        "Anim": "",
-        "Action": "",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 15,
-        "Anim": "",
-        "Action": "",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 16,
-        "Anim": "",
-        "Action": "",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 17,
-        "Anim": "",
-        "Action": "",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 18,
-        "Anim": "",
-        "Action": "",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 19,
-        "Anim": "",
-        "Action": "",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      },
-      {
-        "Time": 20,
-        "Anim": "",
-        "Action": "",
-        "Amt": null,
-        "Dialogue": "",
-        "Who": ""
-      }
+      {   "Time": 0,   "Anim": "SpinShoot",   "Action": "RandomWalk",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 2,   "Anim": "",   "Action": "RandomWalk",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 4,   "Anim": "",   "Action": "RandomWalk",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 5.5,   "Anim": "",   "Action": "Shake",   "Amt": 3,   "Dialogue": "",   "Who": "" },
+      {   "Time": 8,   "Anim": "",   "Action": "Flash",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 8,   "Anim": "",   "Action": "ShootAtPlayer",   "Amt": null,   "Dialogue": "",   "Who": "Player" },
+      {   "Time": 10,   "Anim": "",   "Action": "MoveRight",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 12,   "Anim": "SpinShoot",   "Action": "Rotate",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 13,   "Anim": "",   "Action": "MoveToPlayer",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 14,   "Anim": "",   "Action": "",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 15,   "Anim": "",   "Action": "",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 16,   "Anim": "",   "Action": "",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 17,   "Anim": "",   "Action": "",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 18,   "Anim": "",   "Action": "",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 19,   "Anim": "",   "Action": "",   "Amt": null,   "Dialogue": "",   "Who": "" },
+      {   "Time": 20,   "Anim": "",   "Action": "",   "Amt": null,   "Dialogue": "",   "Who": "" }
      ]
 }
