@@ -23,7 +23,7 @@ public class ExampleMonster : HazardController
     }
 
     //Get big and move to each corner of the screen
-    public IEnumerator FourSquare(float moveSpeed=5)
+    public IEnumerator FourSquare(float moveSpeed = 10)
     {
         //These variables all get used repeatedly in different contexts
         //They always mean loosely the same thing, and just get wiped clean before second use

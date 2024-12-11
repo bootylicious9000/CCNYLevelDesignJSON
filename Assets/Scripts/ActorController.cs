@@ -343,6 +343,10 @@ public class ActorController : MonoBehaviour
         {
             transform.position += new Vector3(0,amt,0);
         }
+        else if (act == "MoveTo")
+        {
+            transform.position = new Vector3(amt,amt,0);
+        }
         else if (act == "TurnOn")
         {
             gameObject.SetActive(true);
